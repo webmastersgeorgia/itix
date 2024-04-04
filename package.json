@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "start": "npx tailwindcss -i src/assets/input-css/styles.css -o ./src/assets/css/styles.css --watch"
+  },
+  "dependencies": {
+    "tw-elements": "^2.0.0"
+  }
+}

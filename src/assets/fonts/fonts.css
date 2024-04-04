@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'FiraGO-Regular';
+  src: url('../fonts/files/FiraGO-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/files/FiraGO-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/files/FiraGO-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/files/FiraGO-Regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/files/FiraGO-Regular.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiraGO-Medium';
+  src: url('../fonts/files/FiraGO-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/files/FiraGO-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/files/FiraGO-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/files/FiraGO-Medium.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/files/FiraGO-Medium.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiraGO-SemiBold';
+  src: url('../fonts/files/FiraGO-SemiBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/files/FiraGO-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/files/FiraGO-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/files/FiraGO-SemiBold.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/files/FiraGO-SemiBold.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: 600;
+  font-style: normal;
+}
+
+.primary-font-400 {
+  font-family: 'FiraGO-Regular';
+}
+.primary-font-500 {
+  font-family: 'FiraGO-Medium';
+}
+.primary-font-600 {
+  font-family: 'FiraGO-SemiBold';
+}
