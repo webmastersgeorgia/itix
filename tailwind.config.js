@@ -16,10 +16,13 @@ module.exports = {
       'black': '#000000',
       'black-light': '#131618',
       'gray': '#6C757D',
-      'gray-light': '#F8F9FA',
-      'gray-light-1': '#F5F7FA',
+      'gray-1': '#F8F9FA',
+      'gray-2': '#F5F7FA',
+      'gray-3': '#B7BFCB',
+      'gray-4': 'rgba(211, 216, 221, 0.5)',
       'blue': '#007BFF ',
-      'white': '#ffffff'
+      'white': '#ffffff',
+      'red': '#DC3545'
     },
     fontFamily: {
       primaryRegular: ['FiraGO-Regular'],

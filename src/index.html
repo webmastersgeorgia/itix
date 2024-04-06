@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!-- custom -->
     <link href="./assets/css/styles.css" rel="stylesheet">
     <title>home</title>
 </head>
-<body class="bg-gray-light-1 font-primaryMedium">
-    <header class="header">
-        <div class="header__top py-2.5 bg-black-light">
+<body class="bg-gray-1 font-primaryMedium">
+
+    <!-- header -->
+    <header>
+        <div class="py-2.5 bg-black-light">
             <div class="container px-[8px] mx-auto">
                 <a href="#" class="lang ml-auto block w-5 h-5 hover:opacity-50">
                     <img src="assets/images/flag-en.svg" width="20" height="20" alt="">
                 </a>
             </div>
         </div>
-        <div class="header__bottom py-3 bg-black">
+        <div class="py-3 bg-black">
             <div class="container px-[8px] mx-auto">
                 <div class="flex items-center">
                     <a href="#" class="inline-block">
@@ -26,6 +31,7 @@
             </div>
         </div>
     </header>
+    <!-- content -->
     <main class="content">
         <div class="mt-7">
             <div class="container px-[8px] mx-auto">
@@ -108,7 +114,7 @@
                 <!-- Current Events -->
                 <section class="mb-[58px]">
                     <div class="mb-[32px]">
-                        <h2 class="font-size capitalize mb-[14px] text-[32px]">Current Events</h2>
+                        <h2 class="capitalize mb-[14px] text-[32px]">Current Events</h2>
                         <nav class="flex">
                             <button type="button" class="capitalize mr-[24px] text-blue">all</button>
                             <button type="button" class="capitalize mr-[24px] text-gray hover:text-default">concerts</button>
@@ -240,7 +246,7 @@
                 <!-- Current Events -->
                 <!-- More Events -->
                 <section class="mb-[52px]">
-                    <h2 class="font-size capitalize mb-[14px] text-[32px]">More Events</h2>
+                    <h2 class="capitalize mb-[14px] text-[32px]">More Events</h2>
                     <div class="flex scroll-slider relative">
                         <a href="#1" id="scroll-slider-main-wrapper" class="scroll-slider__main overflow-hidden rounded-[10px] hover:shadow-[0_0_20px_0_rgba(203,203,203,0.25)] w-[75%]">
                             <img id="scroll-slider-main-img" class="object-cover max-h-[510px] min-h-[510px]" src="uploads/card-2.png" width="100%" height="510" alt="">
@@ -269,35 +275,153 @@
                     </div>
                 </section> 
                 <!-- More Events -->
+                <!-- Upcoming Event -->
+                <section class="mb-[32px]">
+                    <div class="flex items-center mb-[20px]">
+                        <h2 class="capitalize text-[32px]">Upcoming Event</h2>
+                        <div class="ml-auto pl-[10px]">
+                            <button type="button" class="swipe-slider-previous bg-[url('../../assets/images/arrow-left.svg')] w-[40px] h-[40px]"></button>
+                            <button type="button" class="swipe-slider-next bg-[url('../../assets/images/arrow-right.svg')] w-[40px] h-[40px] ml-[10px]"></button>
+                        </div>
+                    </div>
+                    <div class="swipe-slider">
+                        <div>
+                            <div class="flex rounded-[10px] overflow-hidden">
+                                <div class="w-[48%]">
+                                    <img src="uploads/card-1.png" width="100%" height="100%" class="object-cover h-[100%]" alt="">
+                                </div>
+                                <div class="w-[52%] p-[60px] bg-white">
+                                    <h2 class="text-[28px] capitalize mb-[35px] h-[85px] overflow-hidden">Ludovico Einaudi Grand Concert - 1st time in Tbilisi</h2>
+                                    <div class="flex items-center">
+                                        <div class="text-center text-red">
+                                            <div class="text-[32px]">
+                                                14
+                                            </div>
+                                            <div class="font-primaryRegular uppercase">
+                                                days
+                                            </div>
+                                        </div>
+                                        <div class="pl-[22px] pr-[22px]">:</div>
+                                        <div class="text-center">
+                                            <div class="text-[32px]">
+                                                5
+                                            </div>
+                                            <div class="font-primaryRegular uppercase">
+                                                hours
+                                            </div>
+                                        </div>
+                                        <div class="pl-[22px] pr-[22px]">:</div>
+                                        <div class="text-center">
+                                            <div class="text-[32px]">
+                                                20
+                                            </div>
+                                            <div class="font-primaryRegular uppercase">
+                                                minutes
+                                            </div>
+                                        </div>
+                                        <div class="pl-[22px] pr-[22px]">:</div>
+                                        <div class="text-center">
+                                            <div class="text-[32px]">
+                                                50
+                                            </div>
+                                            <div class="font-primaryRegular uppercase">
+                                                SECONDS
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex rounded-[10px] overflow-hidden">
+                                <div class="w-[48%]">
+                                    <img src="uploads/card-1.png" width="100%" height="100%" class="object-cover h-[100%]" alt="">
+                                </div>
+                                <div class="w-[52%] p-[60px] bg-white">
+                                    <h2 class="text-[28px] capitalize mb-[35px] h-[85px] overflow-hidden">Ludovico Einaudi Grand Concert - 1st time in Tbilisi</h2>
+                                    <div class="flex items-center">
+                                        <div class="text-center text-red">
+                                            <div class="text-[32px]">
+                                                16
+                                            </div>
+                                            <div class="font-primaryRegular uppercase">
+                                                days
+                                            </div>
+                                        </div>
+                                        <div class="pl-[22px] pr-[22px]">:</div>
+                                        <div class="text-center">
+                                            <div class="text-[32px]">
+                                                4
+                                            </div>
+                                            <div class="font-primaryRegular uppercase">
+                                                hours
+                                            </div>
+                                        </div>
+                                        <div class="pl-[22px] pr-[22px]">:</div>
+                                        <div class="text-center">
+                                            <div class="text-[32px]">
+                                                10
+                                            </div>
+                                            <div class="font-primaryRegular uppercase">
+                                                minutes
+                                            </div>
+                                        </div>
+                                        <div class="pl-[22px] pr-[22px]">:</div>
+                                        <div class="text-center">
+                                            <div class="text-[32px]">
+                                                30
+                                            </div>
+                                            <div class="font-primaryRegular uppercase">
+                                                SECONDS
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Upcoming Event -->
             </div>
         </div>
     </main>
+    <!-- footer -->
+    <footer class="bg-black">
+        <div class="pt-[55px] pb-[25px]">
+            <div class="container mx-auto">
+                <div class="flex items-center">
+                    <img src="assets/images/logo.png" width="115" height="44" alt="">
+                    <nav class="ml-auto font-primaryRegular text-gray-3">
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Contact</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Privecy Policy</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Terms</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Cookies</a>
+                    </nav>
+                </div>
+                <div class="flex items-center mt-[25px] pt-[25px] pb-[42px] border-t-[1px] border-gray-4">
+                    <div class="text-gray font-primaryRegular">©2024 Itix LTD, all rights reserved</div>
+                    <nav class="ml-auto flex">
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/youtube.svg" alt="">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- JS plugins -->
     <script
         type="text/javascript"
         src="../node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
-    <script>
-        let scrolllSliderMainWrapper = document.getElementById('scroll-slider-main-wrapper');
-        let scrolllSliderMainImg = scrolllSliderMainWrapper.querySelector('#scroll-slider-main-img');
-        let scrolllSliderMainTitle = scrolllSliderMainWrapper.querySelector('#scroll-slider-main-title');
-        let scrolllSliderMainDate = scrolllSliderMainWrapper.querySelector('#scroll-slider-main-date');
-        let scrolllSliderMainPin = scrolllSliderMainWrapper.querySelector('#scroll-slider-main-pin');
-
-        const scrollSliderMainListItem = document.querySelectorAll('.scroll-slider__main-list-item');
-
-        scrollSliderMainListItem.forEach(element => {
-            element.addEventListener('mouseover', function() {
-                scrollSliderMainListItem.forEach(element => element.classList.remove('shadow-[0_2px_4px_0_rgba(0,0,0,0.08)]', 'opacity-70'));
-
-                element.classList.add('shadow-[0_2px_4px_0_rgba(0,0,0,0.08)]', 'opacity-70');
-
-                scrolllSliderMainWrapper.href = element.dataset.href;
-                scrolllSliderMainImg.src = element.src;
-                scrolllSliderMainTitle.innerHTML = element.dataset.title;
-                scrolllSliderMainDate.innerHTML = element.dataset.date;
-                scrolllSliderMainPin.innerHTML = element.dataset.pin;
-            });
-        });
-    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JS custom -->
+    <script src="assets/js/home.js"></script>
 </body>
 </html>

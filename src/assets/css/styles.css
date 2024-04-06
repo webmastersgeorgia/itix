@@ -870,6 +870,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-bottom: 4rem;
 }
 
+.mb-\[-16px\] {
+  margin-bottom: -16px;
+}
+
 .mb-\[14px\] {
   margin-bottom: 14px;
 }
@@ -878,8 +882,16 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-bottom: 16px;
 }
 
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+
 .mb-\[32px\] {
   margin-bottom: 32px;
+}
+
+.mb-\[35px\] {
+  margin-bottom: 35px;
 }
 
 .mb-\[40px\] {
@@ -894,8 +906,24 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-bottom: 58px;
 }
 
+.ml-\[10px\] {
+  margin-left: 10px;
+}
+
+.ml-\[14px\] {
+  margin-left: 14px;
+}
+
+.ml-\[15px\] {
+  margin-left: 15px;
+}
+
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-\[10px\] {
+  margin-right: 10px;
 }
 
 .mr-\[24px\] {
@@ -910,12 +938,8 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 1.75rem;
 }
 
-.mr-\[10px\] {
-  margin-right: 10px;
-}
-
-.mb-\[-16px\] {
-  margin-bottom: -16px;
+.mt-\[25px\] {
+  margin-top: 25px;
 }
 
 .box-border {
@@ -970,8 +994,16 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 3px;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .h-\[60px\] {
   height: 60px;
+}
+
+.h-\[85px\] {
+  height: 85px;
 }
 
 .h-auto {
@@ -1014,8 +1046,20 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 100%;
 }
 
-.w-\[22\%\] {
-  width: 22%;
+.w-\[23\%\] {
+  width: 23%;
+}
+
+.w-\[40px\] {
+  width: 40px;
+}
+
+.w-\[48\%\] {
+  width: 48%;
+}
+
+.w-\[52\%\] {
+  width: 52%;
 }
 
 .w-\[75\%\] {
@@ -1032,14 +1076,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[24\%\] {
-  width: 24%;
-}
-
-.w-\[23\%\] {
-  width: 23%;
 }
 
 .max-w-\[200px\] {
@@ -1228,8 +1264,16 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-inline-start-width: 0.125rem;
 }
 
+.border-t-\[1px\] {
+  border-top-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
+}
+
+.border-gray-4 {
+  border-color: rgba(211, 216, 221, 0.5);
 }
 
 .border-primary {
@@ -1262,14 +1306,22 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-color: rgb(19 22 24 / var(--tw-bg-opacity));
 }
 
-.bg-gray-light-1 {
+.bg-gray-1 {
   --tw-bg-opacity: 1;
-  background-color: rgb(245 247 250 / var(--tw-bg-opacity));
+  background-color: rgb(248 249 250 / var(--tw-bg-opacity));
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/arrow-left\.svg\'\)\] {
+  background-image: url('../../assets/images/arrow-left.svg');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/arrow-right\.svg\'\)\] {
+  background-image: url('../../assets/images/arrow-right.svg');
 }
 
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gradient\.svg\'\)\] {
@@ -1295,6 +1347,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .p-\[24px\] {
   padding: 24px;
+}
+
+.p-\[60px\] {
+  padding: 60px;
 }
 
 .px-4 {
@@ -1342,12 +1398,40 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-bottom: 0.4rem;
 }
 
+.pb-\[25px\] {
+  padding-bottom: 25px;
+}
+
+.pb-\[42px\] {
+  padding-bottom: 42px;
+}
+
+.pl-\[10px\] {
+  padding-left: 10px;
+}
+
+.pl-\[22px\] {
+  padding-left: 22px;
+}
+
+.pr-\[22px\] {
+  padding-right: 22px;
+}
+
 .pr-\[45px\] {
   padding-right: 45px;
 }
 
 .pr-\[5px\] {
   padding-right: 5px;
+}
+
+.pt-\[25px\] {
+  padding-top: 25px;
+}
+
+.pt-\[55px\] {
+  padding-top: 55px;
 }
 
 .text-left {
@@ -1374,12 +1458,20 @@ input[type="range"]:active::-webkit-slider-thumb {
   font-family: FiraGO-Medium;
 }
 
+.font-primaryRegular {
+  font-family: FiraGO-Regular;
+}
+
 .text-\[16px\] {
   font-size: 16px;
 }
 
 .text-\[20px\] {
   font-size: 20px;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
 }
 
 .text-\[32px\] {
@@ -1401,6 +1493,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .capitalize {
@@ -1447,9 +1543,9 @@ input[type="range"]:active::-webkit-slider-thumb {
   color: rgb(108 117 125 / var(--tw-text-opacity));
 }
 
-.text-gray-light {
+.text-gray-3 {
   --tw-text-opacity: 1;
-  color: rgb(248 249 250 / var(--tw-text-opacity));
+  color: rgb(183 191 203 / var(--tw-text-opacity));
 }
 
 .text-info {
@@ -1465,6 +1561,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 .text-primary-100 {
   --tw-text-opacity: 1;
   color: rgb(227 235 247 / var(--tw-text-opacity));
+}
+
+.text-red {
+  --tw-text-opacity: 1;
+  color: rgb(220 53 69 / var(--tw-text-opacity));
 }
 
 .text-success {
