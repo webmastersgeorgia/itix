@@ -18,6 +18,24 @@
     border-radius: 7px;
 }
 
+.tns-nav {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .tns-ovh {
+        overflow: initial;
+    }
+    .tns-inner {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .tns-item {
+        padding-left: 5px;
+        padding-right: 5px; 
+    }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

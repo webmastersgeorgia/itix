@@ -22,20 +22,7 @@ scrollSliderMainListItem.forEach(element => {
 
 var slider = tns({
     container: '.swipe-slider',
-    items: 1,
     prevButton: '.swipe-slider-previous',
     nextButton: '.swipe-slider-next',
-    // responsive: {
-    //     640: {
-    //     edgePadding: 20,
-    //     gutter: 20,
-    //         items: 2
-    //     },
-    //     700: {
-    //         gutter: 30
-    //     },
-    //     900: {
-    //         items: 3
-    //     }
-    // }
+    items: 1
 });
