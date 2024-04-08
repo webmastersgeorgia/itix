@@ -914,6 +914,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-bottom: 24px;
 }
 
+.mb-\[25px\] {
+  margin-bottom: 25px;
+}
+
 .mb-\[32px\] {
   margin-bottom: 32px;
 }
@@ -924,6 +928,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .mb-\[5px\] {
   margin-bottom: 5px;
+}
+
+.ml-\[-15px\] {
+  margin-left: -15px;
 }
 
 .ml-\[10px\] {
