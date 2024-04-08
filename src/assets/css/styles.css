@@ -1074,6 +1074,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-height: 510px;
 }
 
+.min-h-\[450px\] {
+  min-height: 450px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1405,6 +1409,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-image: url('../../assets/images/coldplay.jpg');
 }
 
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gradient-1\.svg\'\)\] {
+  background-image: url('../../assets/images/gradient-1.svg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1425,6 +1433,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 .object-left-top {
   -o-object-position: left top;
      object-position: left top;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-0 {
