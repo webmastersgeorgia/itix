@@ -69,7 +69,7 @@
   font-family: 'FiraGO-SemiBold';
 }
 
-/* Layouts */
+/* Base stuff */
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -84,6 +84,8 @@
   background-color: #D3D8DD;
   border-radius: 7px;
 }
+
+/* Pages */
 
 .tns-nav {
   display: none;
@@ -104,6 +106,8 @@
     padding-right: 5px;
   }
 }
+
+/* Tailwind */
 
 /* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com  */
 
@@ -910,12 +914,12 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-bottom: 24px;
 }
 
-.mb-\[32px\] {
-  margin-bottom: 32px;
+.mb-\[25px\] {
+  margin-bottom: 25px;
 }
 
-.mb-\[35px\] {
-  margin-bottom: 35px;
+.mb-\[32px\] {
+  margin-bottom: 32px;
 }
 
 .mb-\[40px\] {
@@ -924,6 +928,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .mb-\[5px\] {
   margin-bottom: 5px;
+}
+
+.ml-\[-15px\] {
+  margin-left: -15px;
 }
 
 .ml-\[10px\] {
@@ -960,14 +968,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .mt-\[25px\] {
   margin-top: 25px;
-}
-
-.mb-\[25px\] {
-  margin-bottom: 25px;
-}
-
-.ml-\[-15px\] {
-  margin-left: -15px;
 }
 
 .box-border {
@@ -1028,10 +1028,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .h-\[60px\] {
   height: 60px;
-}
-
-.h-\[85px\] {
-  height: 85px;
 }
 
 .h-auto {
@@ -1370,24 +1366,16 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding: 1rem;
 }
 
+.p-\[10px_10px_20px_10px\] {
+  padding: 10px 10px 20px 10px;
+}
+
 .p-\[12px\] {
   padding: 12px;
 }
 
-.p-\[60px\] {
-  padding: 60px;
-}
-
 .p-\[8px\] {
   padding: 8px;
-}
-
-.p-\[10px\] {
-  padding: 10px;
-}
-
-.p-\[10px_10px_20px_10px\] {
-  padding: 10px 10px 20px 10px;
 }
 
 .px-4 {
@@ -1435,40 +1423,24 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-bottom: 0.4rem;
 }
 
-.pb-\[25px\] {
-  padding-bottom: 25px;
+.pb-\[15px\] {
+  padding-bottom: 15px;
 }
 
-.pb-\[42px\] {
-  padding-bottom: 42px;
+.pb-\[25px\] {
+  padding-bottom: 25px;
 }
 
 .pl-\[10px\] {
   padding-left: 10px;
 }
 
-.pl-\[22px\] {
-  padding-left: 22px;
-}
-
-.pr-\[22px\] {
-  padding-right: 22px;
+.pl-\[7px\] {
+  padding-left: 7px;
 }
 
 .pr-\[45px\] {
   padding-right: 45px;
-}
-
-.pt-\[25px\] {
-  padding-top: 25px;
-}
-
-.pt-\[55px\] {
-  padding-top: 55px;
-}
-
-.pl-\[7px\] {
-  padding-left: 7px;
 }
 
 .pr-\[7px\] {
@@ -1479,12 +1451,8 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-top: 20px;
 }
 
-.pb-\[20px\] {
-  padding-bottom: 20px;
-}
-
-.pb-\[15px\] {
-  padding-bottom: 15px;
+.pt-\[25px\] {
+  padding-top: 25px;
 }
 
 .text-left {
@@ -1515,6 +1483,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   font-family: FiraGO-Regular;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-\[16px\] {
   font-size: 16px;
 }
@@ -1527,21 +1499,9 @@ input[type="range"]:active::-webkit-slider-thumb {
   font-size: 24px;
 }
 
-.text-\[28px\] {
-  font-size: 28px;
-}
-
-.text-\[32px\] {
-  font-size: 32px;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[14px\] {
-  font-size: 14px;
 }
 
 .font-medium {
@@ -1945,12 +1905,12 @@ input[type="range"]:active::-webkit-slider-thumb {
     align-items: center;
   }
 
-  .md\:pt-\[55px\] {
-    padding-top: 55px;
-  }
-
   .md\:pb-\[42px\] {
     padding-bottom: 42px;
+  }
+
+  .md\:pt-\[55px\] {
+    padding-top: 55px;
   }
 }
 
@@ -1975,6 +1935,10 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-bottom: 32px;
   }
 
+  .lg\:mb-\[35px\] {
+    margin-bottom: 35px;
+  }
+
   .lg\:mb-\[40px\] {
     margin-bottom: 40px;
   }
@@ -1985,10 +1949,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .lg\:mb-\[58px\] {
     margin-bottom: 58px;
-  }
-
-  .lg\:mb-\[35px\] {
-    margin-bottom: 35px;
   }
 
   .lg\:block {
@@ -2036,10 +1996,6 @@ input[type="range"]:active::-webkit-slider-thumb {
     padding: 60px;
   }
 
-  .lg\:pr-\[5px\] {
-    padding-right: 5px;
-  }
-
   .lg\:pl-\[22px\] {
     padding-left: 22px;
   }
@@ -2048,16 +2004,20 @@ input[type="range"]:active::-webkit-slider-thumb {
     padding-right: 22px;
   }
 
-  .lg\:text-\[32px\] {
-    font-size: 32px;
+  .lg\:pr-\[5px\] {
+    padding-right: 5px;
+  }
+
+  .lg\:text-\[16px\] {
+    font-size: 16px;
   }
 
   .lg\:text-\[28px\] {
     font-size: 28px;
   }
 
-  .lg\:text-\[16px\] {
-    font-size: 16px;
+  .lg\:text-\[32px\] {
+    font-size: 32px;
   }
 }
 
