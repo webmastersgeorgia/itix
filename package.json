@@ -6,6 +6,7 @@
     "start": "npx tailwindcss -i src/assets/input-css/styles.css -o ./src/assets/css/styles.css --watch"
   },
   "dependencies": {
+    "latest": "^0.2.0",
     "tw-elements": "^2.0.0"
   }
 }
