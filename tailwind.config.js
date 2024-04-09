@@ -22,14 +22,21 @@ module.exports = {
       'gray-4': 'rgba(211, 216, 221, 0.5)',
       'blue': '#007BFF ',
       'white': '#ffffff',
-      'red': '#DC3545'
+      'white-1': 'rgba(255, 255, 255, 0.5)',
+      'red': '#DC3545',
+      'red-1': '#D80027'
     },
     fontFamily: {
       primaryRegular: ['FiraGO-Regular'],
       primaryMedium: ['FiraGO-Medium'],
-      primarySemiBold: ['FiraGO-SemiBold']
+      primarySemiBold: ['FiraGO-SemiBold'],
+      digitalNumbersRegular: ['DigitalNumbers-Regular'],
     },
     extend: {
+      backgroundImage: {
+        'hero-pattern':
+          "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.10) 100%)",
+      }
     }
   },
   plugins: [require("tw-elements/plugin.cjs")],
