@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom -->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <title>home</title>
+</head>
+<body class="bg-gray-1 font-primaryMedium">
+
+    <!-- header -->
+    <header class="header">
+        <div class="py-2.5 bg-black-light">
+            <div class="container px-[8px] mx-auto">
+                <a href="#" class="lang ml-auto block w-5 h-5 hover:opacity-50">
+                    <img src="assets/images/flag-en.svg" width="20" height="20" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="py-3 bg-black">
+            <div class="container px-[8px] mx-auto">
+                <div class="flex items-center">
+                    <a href="#" class="inline-block">
+                        <img src="assets/images/logo.png" width="115" height="44" alt="">
+                    </a>
+                    <a href="#" class="auth-link inline-block ml-auto capitalize text-gray-1 text-[16px] hover:opacity-50">sign in</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- content -->
+    <main class="content overflow-hidden">
+        <div class="landing min-h-[450px]">
+            <div
+                id="eventCarousel"
+                class="relative h-[100%]"
+                data-twe-carousel-init
+                data-twe-ride="carousel"
+                >
+                <!--Carousel indicators-->
+                <div
+                    class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-[24px] lg:mb-[52px] xl:mb-[72px] flex list-none justify-center p-0 z-30"
+                    data-twe-carousel-indicators>
+                    <button
+                        type="button"
+                        data-twe-target="#eventCarousel"
+                        data-twe-slide-to="0"
+                        data-twe-carousel-active
+                        class="mx-[3px] box-content  w-1/3 h-[3px] flex-initial cursor-pointer bg-white -indent-[999px] opacity-50 transition-opacity duration-[600ms]"
+                        aria-current="true"
+                        aria-label="Slide 1">
+                    </button>
+                    <button
+                        type="button"
+                        data-twe-target="#eventCarousel"
+                        data-twe-slide-to="1"
+                        class="mx-[3px] box-content  w-1/3 h-[3px] flex-initial cursor-pointer bg-white -indent-[999px] opacity-50 transition-opacity duration-[600ms]"
+                        aria-label="Slide 2">
+                    </button>
+                    <button
+                        type="button"
+                        data-twe-target="#eventCarousel"
+                        data-twe-slide-to="2"
+                        class="mx-[3px] box-content  w-1/3 h-[3px] flex-initial cursor-pointer bg-white -indent-[999px] opacity-50 transition-opacity duration-[600ms]"
+                        aria-label="Slide 3">
+                    </button>
+                </div>
+
+                <!--Carousel items-->
+                <div
+                    class="relative w-full h-[100%] overflow-hidden after:clear-both after:block after:content-['']">
+                    <!--First item-->
+                    <a href="#1"
+                        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none absolute z- w-[100%] h-[100%]"
+                        data-twe-carousel-active
+                        data-twe-carousel-item
+                        style="backface-visibility: hidden">
+                        <div class="bg-[#000] absolute w-[100%] h-[100%] opacity-30"></div>
+                        <div class="bg-[url('../../assets/images/gradient-1.svg')] absolute w-[100%] h-[100%]"></div>
+                        <div class="absolute l-[0] t-[0] w-[100%] h-[100%] flex flex-col justify-center items-center text-center pb-[100px]">  
+                            <h2 class="text-white text-[58px] max-w-[500px] mb-[40px] uppercase leading-[normal] font-primarySemiBold">POOR THINGS GRAND PREMIERA</h2>
+                            <div class="flex mb-[40px]">
+                                <div class="text-red-1">
+                                    <div class="font-digitalNumbersRegular text-[36px] flex mb-[15px]">
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">2</div>
+                                        </div>
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden ml-[10px]">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="uppercase">days</div>
+                                </div>
+                                <div class="text-white ml-[28px]">
+                                    <div class="font-digitalNumbersRegular text-[36px] flex mb-[15px]">
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">2</div>
+                                        </div>
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden ml-[10px]">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">2</div>
+                                        </div>
+                                    </div>
+                                    <div class="uppercase">hours</div>
+                                </div>
+                                <div class="text-white ml-[28px]">
+                                    <div class="font-digitalNumbersRegular text-[36px] flex mb-[15px]">
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">6</div>
+                                        </div>
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden ml-[10px]">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">3</div>
+                                        </div>
+                                    </div>
+                                    <div class="uppercase">minutes</div>
+                                </div>
+                            </div>
+                            <button type="button" class="bg-blue text-white text-[20px] p-[12px_32px] rounded-[6px] capitalize hover:opacity-80">buy now</button>
+                        </div>
+                        <img
+                            src="uploads/slide-1-1.png"
+                            class="block w-full h-[100%] object-cover object-left-top"
+                            alt="..." />
+                    </a>
+                    <!--Second item-->
+                    <a href="#2"
+                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none absolute z- w-[100%] h-[100%]"
+                        data-twe-carousel-item
+                        style="backface-visibility: hidden">
+                        <div class="bg-[#000] absolute w-[100%] h-[100%] opacity-30"></div>
+                        <div class="bg-[url('../../assets/images/gradient-1.svg')] absolute w-[100%] h-[100%]"></div>
+                        <div class="absolute l-[0] t-[0] w-[100%] h-[100%] flex flex-col justify-center items-center text-center pb-[100px]">  
+                            <h2 class="text-white text-[58px] max-w-[500px] mb-[40px] uppercase leading-[normal] font-primarySemiBold">POOR THINGS GRAND PREMIERA</h2>
+                            <div class="flex mb-[40px]">
+                                <div class="text-red-1">
+                                    <div class="font-digitalNumbersRegular text-[36px] flex mb-[15px]">
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">2</div>
+                                        </div>
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden ml-[10px]">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="uppercase">days</div>
+                                </div>
+                                <div class="text-white ml-[28px]">
+                                    <div class="font-digitalNumbersRegular text-[36px] flex mb-[15px]">
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">2</div>
+                                        </div>
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden ml-[10px]">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">2</div>
+                                        </div>
+                                    </div>
+                                    <div class="uppercase">hours</div>
+                                </div>
+                                <div class="text-white ml-[28px]">
+                                    <div class="font-digitalNumbersRegular text-[36px] flex mb-[15px]">
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">6</div>
+                                        </div>
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden ml-[10px]">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">3</div>
+                                        </div>
+                                    </div>
+                                    <div class="uppercase">minutes</div>
+                                </div>
+                            </div>
+                            <button type="button" class="bg-blue text-white text-[20px] p-[12px_32px] rounded-[6px] capitalize hover:opacity-80">buy now</button>
+                        </div>
+                        <img
+                            src="uploads/slide-1-1.png"
+                            class="block w-full h-[100%] object-cover object-left-top"
+                            alt="..." />
+                    </a>
+                    <!--Third item-->
+                    <a href="#3"
+                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none absolute z- w-[100%] h-[100%]"
+                        data-twe-carousel-item
+                        style="backface-visibility: hidden">
+                        <div class="bg-[#000] absolute w-[100%] h-[100%] opacity-30"></div>
+                        <div class="bg-[url('../../assets/images/gradient-1.svg')] absolute w-[100%] h-[100%]"></div>
+                        <div class="absolute l-[0] t-[0] w-[100%] h-[100%] flex flex-col justify-center items-center text-center pb-[100px]">  
+                            <h2 class="text-white text-[58px] max-w-[500px] mb-[40px] uppercase leading-[normal] font-primarySemiBold">POOR THINGS GRAND PREMIERA</h2>
+                            <div class="flex mb-[40px]">
+                                <div class="text-red-1">
+                                    <div class="font-digitalNumbersRegular text-[36px] flex mb-[15px]">
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">2</div>
+                                        </div>
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden ml-[10px]">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="uppercase">days</div>
+                                </div>
+                                <div class="text-white ml-[28px]">
+                                    <div class="font-digitalNumbersRegular text-[36px] flex mb-[15px]">
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">2</div>
+                                        </div>
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden ml-[10px]">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">2</div>
+                                        </div>
+                                    </div>
+                                    <div class="uppercase">hours</div>
+                                </div>
+                                <div class="text-white ml-[28px]">
+                                    <div class="font-digitalNumbersRegular text-[36px] flex mb-[15px]">
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">6</div>
+                                        </div>
+                                        <div class="border-[0.5px] border-white-1 p-[7px_5px] rounded-[5px] relative overflow-hidden ml-[10px]">
+                                            <div class="absolute w-[100%] h-[100%] left-0 top-0 bg-hero-pattern opacity-50"></div>
+                                            <div class="relative">3</div>
+                                        </div>
+                                    </div>
+                                    <div class="uppercase">minutes</div>
+                                </div>
+                            </div>
+                            <button type="button" class="bg-blue text-white text-[20px] p-[12px_32px] rounded-[6px] capitalize hover:opacity-80">buy now</button>
+                        </div>
+                        <img
+                            src="uploads/slide-1-1.png"
+                            class="block w-full h-[100%] object-cover object-left-top"
+                            alt="..." />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer bg-black">
+        <div class="pt-[20px] md:pt-[55px] pb-[25px]">
+            <div class="container mx-auto px-[8px]">
+                <div class="md:flex md:items-center">
+                    <img src="assets/images/logo.png" width="115" height="44" alt="" class="mb-[25px] md:mb-[0]">
+                    <nav class="ml-[-15px] md:ml-auto font-primaryRegular text-gray-3">
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Contact</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Privecy Policy</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Terms</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Cookies</a>
+                    </nav>
+                </div>
+                <div class="flex items-center mt-[25px] pt-[25px] pb-[15px] md:pb-[42px] border-t-[1px] border-gray-4">
+                    <div class="text-gray font-primaryRegular">©2024 Itix LTD<span class="hidden md:inline-block">, all rights reserved</span></div>
+                    <nav class="ml-auto flex">
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/youtube.svg" alt="">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS plugins -->
+    <script
+        type="text/javascript"
+        src="../node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+    <!-- JS custom -->
+    <script src="assets/js/landing.js"></script>
+</body>
+</html>
