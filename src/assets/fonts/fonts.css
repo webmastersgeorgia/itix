@@ -28,13 +28,13 @@
   font-weight: 600;
   font-style: normal;
 }
-
-.primary-font-400 {
-  font-family: 'FiraGO-Regular';
-}
-.primary-font-500 {
-  font-family: 'FiraGO-Medium';
-}
-.primary-font-600 {
-  font-family: 'FiraGO-SemiBold';
+@font-face {
+  font-family: 'DigitalNumbers-Regular';
+  src: url('../fonts/files/DigitalNumbers-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/files/DigitalNumbers-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/files/DigitalNumbers-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/files/DigitalNumbers-Regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/files/DigitalNumbers-Regular.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: 600;
+  font-style: normal;
 }
