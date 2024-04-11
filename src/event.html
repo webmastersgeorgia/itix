@@ -30,33 +30,259 @@
     </div>
 </header>
 <!-- content -->
-<main class="content overflow-hidden">
-
-    <div >
+<main class="content overflow-hidden min-h-[1000px]">
         <!-- background -->
         <section>
-            <div class="absolute bg-[url('../../assets/images/coldplay.jpg')]   bg-no-repeat  bg-cover w-[100%] h-[400px] ">
-              <div class="absolute w-[100%] h-[400px] backdrop-blur-md bg-gray/10">
-                  <div class="flex mt-[32px] md:mt-[101px] lg:mt-[105px] flex-row lg:ml-[72px] md:ml-[38px] text-gray-1">
-                      <div >
-                          <img src="../src/assets/images/coldplay.jpg"  class="w-[364px] h-[190px] rounded-[7px] object-left-top object-cover" alt="img" />
+            <div class="bg-[url('../../assets/images/coldplay.jpg')]   bg-no-repeat  bg-cover w-[100%] h-[400px]  ">
+                <div class="absolute w-[100%] h-[400px] backdrop-blur-md bg-gray/10">
+                      <div class="flex mt-[32px] md:mt-[101px] lg:mt-[105px] flex-row lg:ml-[72px] md:ml-[38px] text-gray-1">
+                          <div >
+                              <img src="../src/assets/images/coldplay.jpg"  class="w-[364px] h-[190px] rounded-[7px] object-left-top object-cover" alt="img" />
+                          </div>
+                          <div class="w-[384px] lg:ml-[38px]">
+                              <h1 class="text-[32px] capitalize leading-normal font-semibold">Coldplay Grand Show 2024 Batumi is waiting</h1>
+                              <div class="mt-[20px]"><span class="text-[20px]">Fri, 26 Jan</span><span class="text-[20px] ml-[30px]"><img src="assets/images/location.svg" class="inline"  alt=""  /> Batumi Arena</span></div>
+                              <div class="mt-[20px] rounded-[30px] py-[4px]  px-[32px]  border-2 inline-block"><a href="#">Share</a></div>
+                          </div>
                       </div>
-                      <div class="w-[384px] lg:ml-[38px]">
-                          <h1 class="text-[32px] capitalize leading-normal font-semibold">Coldplay Grand Show 2024 Batumi is waiting</h1>
-                          <div class="mt-[20px]"><span class="text-[20px]">Fri, 26 Jan</span><span class="text-[20px] ml-[30px]"><img src="assets/images/location.svg" class="inline"  alt=""  /> Batumi Arena</span></div>
-                          <div class="mt-[20px] rounded-[30px] py-[4px]  px-[32px]  border-2 inline-block"><a href="#">Share</a></div>
-                      </div>
-                  </div>
-              </div>
+                </div>
             </div>
         </section>
         <!-- background -->
+        <!-- Navigation -->
+        <section>
+            <div id="navigation-content">
+                <div class=" h-[68px] bg-white shadow-md w-full z-10" id="navigation">
+                    <div class="container mx-auto relative">
+                        <div class="flex pt-[16px]">
+                            <nav class="flex">
+                                <a type="button" href="#" class="uppercase mr-[24px] text-default p-[0px_30px_5px_30px] border-b-[2px]">about</a>
+                                <a type="button" href="#" class="uppercase mr-[24px] text-gray hover:border-b-[2px] pb-[5px] ">gallery</a>
+                                <a type="button" href="#" class="uppercase mr-[24px] text-gray hover:border-b-[2px] pb-[5px] ">organiser</a>
+                                <a type="button" href="#" class="uppercase mr-[24px] text-gray hover:border-b-[2px] pb-[5px] ">return policy</a>
+                            </nav>
+                        </div>
+                        <div class="absolute top-[7px] left-[800px]">
+                            <div class="inline-flex -">
+                                <div class="flex flex-col text-center">
+                                    <span class="font-primarySemiBold text-[#D80027] text-[20px]" id="c_days">00</span>
+                                    <span class="uppercase text-[#F76D6D]  font-primaryRegular text-[14px]">DAYS</span>
+                                </div>
+                                <div class="flex ml-[25px]">
+                                    <span class="m-auto text-[22px]">:</span>
+                                </div>
+                                <div class="flex flex-col text-center ml-[20px]">
+                                    <span class="font-primarySemiBold text-default text-[20px]" id="c_hours">00</span>
+                                    <span class="uppercase text-default font-primaryRegular text-[14px]">HOURS</span>
+                                </div>
+                                <div class="flex ml-[25px]">
+                                    <span class="m-auto text-[22px]">:</span>
+                                </div>
+                                <div class="flex flex-col text-center ml-[20px]">
+                                    <span class="font-primarySemiBold text-default text-[20px]" id="c_minutes">00</span>
+                                    <span class="uppercase text-default font-primaryRegular text-[14px]">MUNUTES</span>
+                                </div>
+                                <div class="flex ml-[25px]">
+                                    <span class="m-auto text-[22px]">:</span>
+                                </div>
+                                <div class="flex flex-col text-center ml-20px]">
+                                    <span class="font-primarySemiBold text-default text-[20px]" id="c_seconds">00</span>
+                                    <span class="uppercase text-default font-primaryRegular text-[14px]">SECONDS</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Navigation -->
         <div class="container px-[8px] mx-auto">
+             <div class="flex flex-row">
+                 <div class="lg:w-[70%] w-[100%]  lg:border-r border-0 border-gray-3">
+                     <div class="xl:w-[calc(100%-140px)] lg:w-[calc(100%-30px)] md:w-[calc(100%-10px)]">
+                        <!-- about -->
+                        <section>
+                            <div class="mt-[30px] w-[100%]">
+                                <h2 class="uppercase text-[20px]">about</h2>
+                                <div class="mt-[20px] font-primaryRegular">
+                                    <div class="columns-3">
+                                        <div class="flex flex-row">
+                                            <div class="inline-flex h-[42px]"><img src="assets/images/over18.png" class=" w-[26px] m-auto" alt=""></div>
+                                            <div class="inline-block pl-[16px] ">
+                                                <h3 class="text-[16px] font-primaryMedium">Adults Over 18+</h3>
+                                                <span class="text-gray text-[14px]">Footnote text here</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row">
+                                            <div class="inline-flex h-[42px]"><img src="assets/images/parking.png" class=" w-[26px] m-auto" alt=""></div>
+                                            <div class="inline-block pl-[16px] ">
+                                                <h3 class="text-[16px] font-primaryMedium">Free Parking</h3>
+                                                <span class="text-gray text-[14px]">Footnote text here</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row">
+                                            <div class="inline-flex h-[42px]"><img src="assets/images/cap.png" class=" w-[26px] m-auto" alt=""></div>
+                                            <div class="inline-block pl-[16px] ">
+                                                <h3 class="text-[16px] font-primaryMedium">Free Soft Drinks</h3>
+                                                <span class="text-gray text-[14px]">Footnote text here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="columns-3 mt-[30px]">
+                                        <div class="flex flex-row">
+                                            <div class="inline-flex h-[42px] "><img src="assets/images/nosmoking.png" class=" w-[26px] m-auto" alt=""></div>
+                                            <div class="inline-block pl-[16px] ">
+                                                <h3 class="text-[16px] font-primaryMedium">No Smoking</h3>
+                                                <span class="text-gray text-[14px]">Footnote text here</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row">
+                                            <div class="inline-flex h-[42px]"><img src="assets/images/pet.png" class=" w-[26px] m-auto" alt=""></div>
+                                            <div class="inline-block pl-[16px] ">
+                                                <h3 class="text-[16px] font-primaryMedium">Pet Friendly</h3>
+                                                <span class="text-gray text-[14px]">Footnote text here</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row">
+                                            <div class="inline-flex h-[42px]"><img src="assets/images/WheelchairSymbol.png" class=" w-[26px] m-auto" alt=""></div>
+                                            <div class="inline-block pl-[16px] text-gray ">
+                                                <h3 class="text-[16px] font-primaryMedium">Wheelchair-Friendly</h3>
+                                                <span class="text-[14px]">Footnote text here</span>
 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-[20px] text-[16px] font-primaryRegular">
+                                        Welcome to join our fourth edition of TEDx ESMTBerlin, which will take place on the 17th of February,
+                                        2024 at ESMT Berlin. Join us in person to hear from our diverse and distinguished line-up of speakers on the
+                                        theme "Upside Down: Uniting Voices to Empower Tomorrow".Our conference will dissect recent global shifts,
+                                        envision future transformations, and share personal narratives of triumph over adversity.  Join us to uncover
+                                        actionable insights on embracing change, fostering resilience, and shaping a future where challenges fuel growth and progress.
+                                    </div>
+                                    <div class ="pt-[20px]">
+                                        <iframe width="100%" height="359" src="https://www.youtube.com/embed/MLpWrANjFbI?si=PZZZxPVczph0h8Ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 
+                                        </iframe>
+                                    </div>
+                                    <div class="mt-[10px] text-[16px] font-primaryRegular">
+                                        Welcome to join our fourth edition of TEDx ESMTBerlin, which will take place on the 17th of February, 2024 at ESMT Berlin. Join us in person to hear from our diverse and distinguished line-up of speakers on the theme "Upside Down: Uniting Voices to Empower Tomorrow". Our conference will dissect recent global shifts, envision future transformations, and share personal narratives of triumph over adversity. Join us to uncover actionable insights on embracing change, fostering resilience, and shaping a future where challenges fuel growth and progress.
+                                    </div>
+                                    <div class="mt-[10px]">
+                                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4xkOaSrkexMciUUogZKVTS?utm_source=generator" width="100%" height="90" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                    </div>
+                                    <div class="mt-[10px] text-center">
+                                        <button class="text-[16px] text-gray border-[1px] border-gray-3 rounded-[6px] py-[16px] px-[46px]">Show Less</button>
+                                    </div>
+                                    <div class="mt-[20px]">
+                                        <hr class="border-gray-3" />
+                                    </div>
 
+                                </div>
+                            </div>
+                        </section>
+                        <!-- about -->
+                        <!-- gallery -->
+                        <section>
+                            <div class="mt-[30px] w-[100%]">
+                                <h2 class="uppercase text-[20px]">GALLERY</h2>
+                                <div class="mt-[10px] font-primaryRegular">
+                                    <div class="xl:columns-3  columns-2 w-[100%]">
+                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                            <img src="assets/images/noimage.png" class="m-auto " alt="" />
+                                        </div>
+                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                            <img src="assets/images/noimage.png" class="m-auto " alt="" />
+                                        </div>
+                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                            <img src="assets/images/noimage.png" class="m-auto " alt="" />
+                                        </div>
+                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                            <img src="assets/images/noimage.png" class="m-auto " alt="" />
+                                        </div>
+                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                            <img src="assets/images/noimage.png" class="m-auto " alt="" />
+                                        </div>
+                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                            <img src="assets/images/noimage.png" class="m-auto " alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-[20px]">
+                                    <hr class="border-gray-3" />
+                                </div>
+                            </div>
+
+                        </section>
+                        <!-- gallery -->
+                        <!-- ORGANISER -->
+                        <section>
+                            <div class="mt-[30px] w-[100%]">
+                                <h2 class="uppercase text-[20px]">ORGANISER</h2>
+                                <div class="mt-[10px] font-primaryRegular">
+                                    <div class="flex flex-row w-[100%]">
+                                        <div class="w-[155px] h-[87px] bg-[#D9D9D9]"></div>
+                                        <div class="ml-[20px] w-[574px]">Under EU rules, a seller must repair, replace, or give you a full or partial refund if something you buy turns out to be faulty or doesn’t look or work as advertised. You always have the right to a minimum 2-year guarantee, at no cost.</div>
+                                    </div>
+                                </div>
+                                <div class="mt-[20px]">
+                                    <hr class="border-gray-3" />
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ORGANISER -->
+                        <!-- RETURN POLICY -->
+                        <section>
+                            <div class="mt-[30px] w-[100%] mb-[30px]">
+                                <h2 class="uppercase text-[20px]">ORGANISER</h2>
+                                <div class="mt-[10px] font-primaryRegular">
+                                    <div class="flex flex-row w-[100%]">
+                                        <div >Under EU rules, a seller must repair, replace, or give you a full or partial refund if something you buy turns out to be faulty or doesn’t look or work as advertised. You always have the right to a minimum 2-year guarantee, at no cost. However, national rules in your country may give you extra protection.
+                                            You can return any purchase within 14 days without justification (see 14-day cooling-off period). After 14 days, you can usually only ask for a partial or full refund if it's not possible to repair or replace the goods. Please note that you might not be entitled to a refund if the problem is minor (such as a scratch on a CD case).</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <!-- RETURN POLICY -->
+                     </div>
+                 </div>
+                 <div class="lg:w-[30%] lg:block hidden " >
+                    <div class="inline-flex w-[100%]">
+                        <div class="w-[195px] ml-[32px]">
+                            <div class="w-[100%] h-[155px] rounded-[8px] mt-[34px] border  border-gray-3 text-center bg-white ">
+                                <h3 class="mt-[45px]">From 50₾</h3>
+                                <button class="p-[12px_24px_12px_24px] bg-[#007BFF] rounded-[4px] text-white mt-[10px]">Find Ticket</button>
+                            </div>
+                            <div class="w-[195px] h-[95px] rounded-[8px] mt-[34px] bg-[#E4A32D] rounded-b-[8px]  ">
+                               <div class="bg-[#1F3040] rounded-t-[8px] h-[62px] flex flex-col items-center">
+                                   <img src="assets/images/solo-bank1.png" class="w-[29px] h-auto inline-flex" alt="">
+                                   <img src="assets/images/solo-bank.png" class="inline-flex" alt="">
+
+                               </div>
+                               <div class="h-[24px]  inline-flex w-[100%]">
+                                   <span class="m-auto text-center w-[100%]">solo members 30% off</span>
+                               </div>
+                            </div>
+                            <div class="w-[100%]  rounded-[8px] mt-[34px]   ">
+                                <h3 class="mt-[45px] text-[20px]">DATE AND TIME</h3>
+                                <div class="font-primaryRegular text-[16px] mt-[12px]">26th of Jan,</div>
+                                <div class="font-primaryRegular text-[16px]">Friday - 20:00</div>
+                            </div>
+                            <div class="w-[100%]  rounded-[8px] mt-[34px]   ">
+                                <h3 class="mt-[45px] text-[20px]">VENUE</h3>
+                                <div class="font-primaryRegular text-[16px] mt-[12px]">Batumi Arena,</div>
+                                <div class="font-primaryRegular text-[16px]">Grigoleti street 47</div>
+                            </div>
+                            <div class="w-[100%]  rounded-[8px] mt-[12px]   ">
+                                <a href="#" class="text-[16px] text-blue" >show the google map</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
         </div>
-    </div>
 </main>
 <!-- footer -->
 <footer class="bg-black">
@@ -95,5 +321,52 @@
         src="../node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
 <!-- JS custom -->
 <script src="assets/js/home.js"></script>
+<script>
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("JUN 5, 2024 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+         document.getElementById("c_days").innerHTML = days;
+         document.getElementById("c_hours").innerHTML = hours;
+         document.getElementById("c_minutes").innerHTML = minutes;
+         document.getElementById("c_seconds").innerHTML = seconds;
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+        const navigation = document.getElementById("navigation"); // Replace with your div's actual ID
+        const navigationCont = document.getElementById("navigation-content"); // Replace with your div's actual ID
+        window.addEventListener("scroll", function() {
+            console.log(navigationCont.getBoundingClientRect().top)
+            if (navigationCont.getBoundingClientRect().top < 10) {
+                navigation.classList.add("fixed");
+                navigation.classList.add("top-0");
+            }
+            if (navigationCont.getBoundingClientRect().top > 0) {
+                navigation.classList.remove("fixed");
+                navigation.classList.remove("top-0");
+            }
+        });
+</script>
+
 </body>
 </html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom -->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <title>home</title>
+</head>
+<body class="bg-gray-1 font-primaryMedium">
+
+<!-- header -->
+<header>
+    <div class="py-2.5 bg-black-light">
+        <div class="container px-[8px] mx-auto">
+            <a href="#" class="lang ml-auto block w-5 h-5 hover:opacity-50">
+                <img src="assets/images/flag-en.svg" width="20" height="20" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="py-3 bg-black">
+        <div class="container px-[8px] mx-auto">
+            <div class="flex items-center">
+                <a href="#" class="inline-block">
+                    <img src="assets/images/logo.png" width="115" height="44" alt="">
+                </a>
+                <a href="#" class="auth-link inline-block ml-auto capitalize text-gray-1 text-[16px] hover:opacity-50">sign in</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- content -->
+<main class="content overflow-hidden">
+    <!-- background -->
+    <section class="hidden lg:block">
+        <div class="bg-[url('../../../src/uploads/coldplay.jpg')] bg-no-repeat bg-cover w-[100%] h-[165px] relative">
+            <div class="absolute w-[100%] h-[100%] backdrop-blur-md bg-gray/10">
+                <div class="flex m-[28px_72px] flex-row text-gray-1">
+                    <div>
+                        <img src="uploads/coldplay.jpg" class="min-w-[210px] w-[210px] h-[115px] rounded-[7px] object-left-top object-cover" alt="img" />
+                    </div>
+                    <div class="w-[100%] lg:ml-[38px]">
+                        <h1 class="text-[28px] capitalize leading-normal font-semibold">Coldplay Grand Show 2024 <br> Batumi is waiting</h1>
+                        <div class="mt-[5px]"><span class="text-[20px]">Fri, 26 Jan</span><span class="text-[20px] ml-[30px]"><img src="assets/images/location.svg" class="inline"  alt=""  /> Batumi Arena</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lg:flex">
+        <div class="lg:w-[55%] xl:w-[65%] p-[12px_8px] lg:p-[32px_72px] bg-gray-2">
+            <h1 class="text-[28px] capitalize mb-[16px]">Tickets</h1>
+            <div class="bg-white mb-[15px] p-[20px] rounded-[10px] shadow-[0px_0px_20px_0px_rgba(203,203,203,0.25)] border-[1px] border-[#D3D8DD] border-red"><!-- border-red class when wrong-validation -->
+                <div class="flex mb-[10px]">
+                    <img src="uploads/coldplay.jpg" class="min-w-[100px] w-[100px] h-[50px] rounded-[7px] object-left-top object-cover mr-[15px]" alt="img" />
+                    <div class="flex">
+                        <div class="font-primaryRegular capitalize">Raw 3</div>
+                        <div class="font-primaryRegular capitalize ml-[22px]">Seat 4</div>
+                        <div class="font-primaryRegular capitalize ml-[22px]">Price 50₾</div>
+                    </div>
+                </div>
+                <div class="font-primaryRegular mb-[10px] text-red">Please fill in information</div>
+                <div class="flex">
+                    <div class="columns-3 w-full">
+                        <div>
+                            <input type="text" class="font-primaryRegular text-[14px] p-[15px_12px] h-[48px] outline-none rounded-[10px] border-[1px] border-[#D3D8DD] focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] w-[100%]" placeholder="First name">
+                        </div>
+                        <div>
+                            <input type="text" class="font-primaryRegular text-[14px] p-[15px_12px] h-[48px] outline-none rounded-[10px] border-[1px] border-[#D3D8DD] focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] w-[100%]" placeholder="Last name">
+                        </div>
+                        <div>
+                            <input type="text" class="font-primaryRegular text-[14px] p-[15px_12px] h-[48px] outline-none rounded-[10px] border-[1px] border-[#D3D8DD] focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] w-[100%]" placeholder="ID number">
+                        </div>
+                    </div>
+                    <button class="ml-[15px] h-[48px] p-[10px_20px] border-[1px] border-[#D3D8DD] rounded-[10px] text-blue hover:border-blue hover:bg-blue hover:text-white">Apply</button>
+                </div>
+            </div>
+            <div class="mb-[32px]">
+                <div class="columns-2 mb-[20px]">
+                    <div>
+                        <div class="flex bg-white p-[16px] rounded-[10px] shadow-[0px_0px_20px_0px_rgba(203,203,203,0.25)] border-[1px] border-[#D3D8DD] mb-[12px]">
+                            <img src="uploads/coldplay.jpg" class="min-w-[105px] w-[105px] h-[55px] rounded-[7px] object-left-top object-cover mr-[12px]" alt="img" />
+                            <div class="font-primaryRegular w-[calc(100%-117px)]">
+                                <div class="flex flex-col h-full">
+                                    <div class="flex">
+                                        <div class="capitalize pr-[10px]">Irakli Lomidze</div>
+                                        <div class="ms-auto">01022039476</div>
+                                    </div>
+                                    <div class="flex mt-auto">
+                                        <div class="pr-[10px]">Raw 3</div>
+                                        <div class="pr-[10px]">Seat 4</div>
+                                        <div class="ms-auto">50₾</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex bg-white p-[16px] rounded-[10px] shadow-[0px_0px_20px_0px_rgba(203,203,203,0.25)] border-[1px] border-[#D3D8DD] mb-[12px]">
+                            <img src="uploads/coldplay.jpg" class="min-w-[105px] w-[105px] h-[55px] rounded-[7px] object-left-top object-cover mr-[12px]" alt="img" />
+                            <div class="font-primaryRegular w-[calc(100%-117px)]">
+                                <div class="flex flex-col h-full">
+                                    <div class="flex">
+                                        <div class="capitalize pr-[10px]">Irakli Lomidze</div>
+                                        <div class="ms-auto">01022039476</div>
+                                    </div>
+                                    <div class="flex mt-auto">
+                                        <div class="pr-[10px]">Raw 3</div>
+                                        <div class="pr-[10px]">Seat 4</div>
+                                        <div class="ms-auto">50₾</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex bg-white p-[16px] rounded-[10px] shadow-[0px_0px_20px_0px_rgba(203,203,203,0.25)] border-[1px] border-[#D3D8DD] mb-[12px]">
+                            <img src="uploads/coldplay.jpg" class="min-w-[105px] w-[105px] h-[55px] rounded-[7px] object-left-top object-cover mr-[12px]" alt="img" />
+                            <div class="font-primaryRegular w-[calc(100%-117px)]">
+                                <div class="flex flex-col h-full">
+                                    <div class="flex">
+                                        <div class="capitalize pr-[10px]">Irakli Lomidze</div>
+                                        <div class="ms-auto">01022039476</div>
+                                    </div>
+                                    <div class="flex mt-auto">
+                                        <div class="pr-[10px]">Raw 3</div>
+                                        <div class="pr-[10px]">Seat 4</div>
+                                        <div class="ms-auto">50₾</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex bg-white p-[16px] rounded-[10px] shadow-[0px_0px_20px_0px_rgba(203,203,203,0.25)] border-[1px] border-[#D3D8DD] mb-[12px]">
+                            <img src="uploads/coldplay.jpg" class="min-w-[105px] w-[105px] h-[55px] rounded-[7px] object-left-top object-cover mr-[12px]" alt="img" />
+                            <div class="font-primaryRegular w-[calc(100%-117px)]">
+                                <div class="flex flex-col h-full">
+                                    <div class="flex">
+                                        <div class="capitalize pr-[10px]">Irakli Lomidze</div>
+                                        <div class="ms-auto">01022039476</div>
+                                    </div>
+                                    <div class="flex mt-auto">
+                                        <div class="pr-[10px]">Raw 3</div>
+                                        <div class="pr-[10px]">Seat 4</div>
+                                        <div class="ms-auto">50₾</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="font-primaryRegular max-w-[calc(50%-15px)]">
+                    <label for="promo-code" class="block capitalize mb-[6px]">Promo Code</label>
+                    <div class="flex rounded-[10px] bg-white border-[1px] border-[#D3D8DD] overflow-hidden hover:border-blue">
+                        <input id="promo-code" type="text" class="font-primaryRegular text-[14px] p-[15px_12px] h-[48px] outline-none w-[100%]" placeholder="Enter your code here...">
+                        <button class="ml-[15px] h-[48px] p-[10px_20px] border-l-[1px] border-[#D3D8DD] text-blue hover:border-blue hover:bg-blue hover:text-white">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-[45%] xl:w-[35%] lg:flex lg:flex-col p-[25px_8px_32px_8px] lg:p-[15px_20px_24px_20px] bg-white border-l-[1px] border-[#D3D8DD]">
+            <div class="flex items-center mb-[15px]">
+                <h2 class="capitalize text-[20px] pr-[10px]">Your Tickets</h2>
+                <div class="ms-auto flex items-center border-[1px] border-[#D3D8DD] rounded-[30px] p-[8px_15px] text-red">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none" class="mr-[5px]">
+                        <path d="M6.75 14.25C5.35761 14.25 4.02226 13.6969 3.03769 12.7123C2.05312 11.7277 1.5 10.3924 1.5 9C1.5 7.60761 2.05312 6.27226 3.03769 5.28769C4.02226 4.30312 5.35761 3.75 6.75 3.75C8.14239 3.75 9.47774 4.30312 10.4623 5.28769C11.4469 6.27226 12 7.60761 12 9C12 10.3924 11.4469 11.7277 10.4623 12.7123C9.47774 13.6969 8.14239 14.25 6.75 14.25ZM12.0225 4.7925L13.0875 3.7275C12.75 3.345 12.4125 3 12.03 2.67L10.965 3.75C9.8025 2.805 8.34 2.25 6.75 2.25C4.95979 2.25 3.2429 2.96116 1.97703 4.22703C0.711159 5.4929 0 7.20979 0 9C0 10.7902 0.711159 12.5071 1.97703 13.773C3.2429 15.0388 4.95979 15.75 6.75 15.75C10.5 15.75 13.5 12.7275 13.5 9C13.5 7.41 12.945 5.9475 12.0225 4.7925ZM6 9.75H7.5V5.25H6V9.75ZM9 0H4.5V1.5H9V0Z" fill="#DC3545"/>
+                    </svg>
+                    3:26
+                </div>
+            </div>
+            <div class="font-primaryRegular">
+                <div class="flex mb-[15px]">
+                    <div class="w-[20%]">
+                        Row 3
+                    </div>
+                    <div class="w-[20%] pl-[10px]">
+                        Seat 12
+                    </div>
+                    <div class="w-[60%] flex items-center justify-end pl-[20px]">
+                        <div class="w-[80%] text-right">50₾</div>
+                        <div class="w-[20%] text-right pl-[20px]">
+                            <button type="button" class="hover:opacity-80">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none">
+                                    <path d="M9.40166 3.33557V4.14625H4.53516V5.76761H5.50846V16.3064C5.50846 16.7365 5.71355 17.1489 6.0786 17.4529C6.44366 17.757 6.93879 17.9278 7.45506 17.9278H17.1881C17.7043 17.9278 18.1995 17.757 18.5645 17.4529C18.9296 17.1489 19.1347 16.7365 19.1347 16.3064V5.76761H20.108V4.14625H15.2415V3.33557H9.40166ZM7.45506 5.76761H17.1881V16.3064H7.45506V5.76761ZM9.40166 7.38897V14.6851H11.3483V7.38897H9.40166ZM13.2949 7.38897V14.6851H15.2415V7.38897H13.2949Z" fill="#5D6369"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mb-[15px]">
+                    <div class="w-[20%]">
+                        Row 3
+                    </div>
+                    <div class="w-[20%] pl-[10px]">
+                        Seat 12
+                    </div>
+                    <div class="w-[60%] flex items-center justify-end pl-[20px]">
+                        <div class="w-[80%] text-right">50₾</div>
+                        <div class="w-[20%] text-right pl-[20px]">
+                            <button type="button" class="hover:opacity-80">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none">
+                                    <path d="M9.40166 3.33557V4.14625H4.53516V5.76761H5.50846V16.3064C5.50846 16.7365 5.71355 17.1489 6.0786 17.4529C6.44366 17.757 6.93879 17.9278 7.45506 17.9278H17.1881C17.7043 17.9278 18.1995 17.757 18.5645 17.4529C18.9296 17.1489 19.1347 16.7365 19.1347 16.3064V5.76761H20.108V4.14625H15.2415V3.33557H9.40166ZM7.45506 5.76761H17.1881V16.3064H7.45506V5.76761ZM9.40166 7.38897V14.6851H11.3483V7.38897H9.40166ZM13.2949 7.38897V14.6851H15.2415V7.38897H13.2949Z" fill="#5D6369"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mb-[15px]">
+                    <div class="w-[20%]">
+                        Row 3
+                    </div>
+                    <div class="w-[20%] pl-[10px]">
+                        Seat 12
+                    </div>
+                    <div class="w-[60%] flex items-center justify-end pl-[20px]">
+                        <div class="w-[80%] text-right">50₾</div>
+                        <div class="w-[20%] text-right pl-[20px]">
+                            <button type="button" class="hover:opacity-80">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none">
+                                    <path d="M9.40166 3.33557V4.14625H4.53516V5.76761H5.50846V16.3064C5.50846 16.7365 5.71355 17.1489 6.0786 17.4529C6.44366 17.757 6.93879 17.9278 7.45506 17.9278H17.1881C17.7043 17.9278 18.1995 17.757 18.5645 17.4529C18.9296 17.1489 19.1347 16.7365 19.1347 16.3064V5.76761H20.108V4.14625H15.2415V3.33557H9.40166ZM7.45506 5.76761H17.1881V16.3064H7.45506V5.76761ZM9.40166 7.38897V14.6851H11.3483V7.38897H9.40166ZM13.2949 7.38897V14.6851H15.2415V7.38897H13.2949Z" fill="#5D6369"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mb-[15px]">
+                    <div class="w-[20%]">
+                        Row 3
+                    </div>
+                    <div class="w-[20%] pl-[10px]">
+                        Seat 12
+                    </div>
+                    <div class="w-[60%] flex items-center justify-end pl-[20px]">
+                        <div class="w-[80%] text-right">50₾</div>
+                        <div class="w-[20%] text-right pl-[20px]">
+                            <button type="button" class="hover:opacity-80">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none">
+                                    <path d="M9.40166 3.33557V4.14625H4.53516V5.76761H5.50846V16.3064C5.50846 16.7365 5.71355 17.1489 6.0786 17.4529C6.44366 17.757 6.93879 17.9278 7.45506 17.9278H17.1881C17.7043 17.9278 18.1995 17.757 18.5645 17.4529C18.9296 17.1489 19.1347 16.7365 19.1347 16.3064V5.76761H20.108V4.14625H15.2415V3.33557H9.40166ZM7.45506 5.76761H17.1881V16.3064H7.45506V5.76761ZM9.40166 7.38897V14.6851H11.3483V7.38897H9.40166ZM13.2949 7.38897V14.6851H15.2415V7.38897H13.2949Z" fill="#5D6369"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex border-t-[1px] pt-[15px] border-[#D3D8DD]">
+                    <div class="w-[40%]">
+                        Subtotal
+                    </div>
+                    <div class="w-[60%] flex items-center justify-end pl-[20px]">
+                        <div class="w-[80%] text-right pr-[20%] font-primaryMedium">100₾</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-[30px] lg:pt-[50px] mb-[32px]">
+                <h2 class="capitalize text-[20px] mb-[15px]">Fees</h2>
+                <div class="flex border-t-[1px] pt-[15px] mb-[15px] border-[#D3D8DD] font-primaryRegular">
+                    <div class="w-[40%]">
+                        VAT 10%
+                    </div>
+                    <div class="w-[60%] flex items-center justify-end pl-[20px]">
+                        <div class="w-[80%] text-right pr-[20%]">10₾</div>
+                    </div>
+                </div>
+                <div class="flex border-t-[1px] pt-[15px] mb-[15px] border-[#D3D8DD]">
+                    <div class="w-[40%] capitalize">
+                        total
+                    </div>
+                    <div class="w-[60%] flex items-center justify-end pl-[20px]">
+                        <div class="w-[80%] text-right pr-[20%]">110₾</div>
+                    </div>
+                </div>
+            </div>
+            <button class="w-full capitalize p-[15px_20px] bg-blue text-white rounded-[10px] hover:opacity-80 mt-auto">Continue</button>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<footer class="bg-black">
+    <div class="pt-[20px] md:pt-[55px] pb-[25px]">
+        <div class="container mx-auto px-[8px]">
+            <div class="md:flex md:items-center">
+                <img src="assets/images/logo.png" width="115" height="44" alt="" class="mb-[25px] md:mb-[0]">
+                <nav class="ml-[-15px] md:ml-auto font-primaryRegular text-gray-3">
+                    <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Contact</a>
+                    <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Privecy Policy</a>
+                    <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Terms</a>
+                    <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Cookies</a>
+                </nav>
+            </div>
+            <div class="flex items-center mt-[25px] pt-[25px] pb-[15px] md:pb-[42px] border-t-[1px] border-gray-4">
+                <div class="text-gray font-primaryRegular">©2024 Itix LTD<span class="hidden md:inline-block">, all rights reserved</span></div>
+                <nav class="ml-auto flex">
+                    <a href="#" class="ml-[14px] hover:opacity-50">
+                        <img src="assets/images/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="ml-[14px] hover:opacity-50">
+                        <img src="assets/images/instagram.svg" alt="">
+                    </a>
+                    <a href="#" class="ml-[14px] hover:opacity-50">
+                        <img src="assets/images/youtube.svg" alt="">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

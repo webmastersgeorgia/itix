@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-[#F5F7FA] font-primaryMedium min-h-screen flex flex-col justify-between">
+    <main class="content overflow-hidden px-[16px] bg-[url('../../assets/images/bg-1.svg')] bg-no-repeat bg-center">
+        <div class="mx-auto max-w-[382px]">
+            <h1 class="text-default text-[28px]   font-[600] capitalize mb-[34px] mt-[36px] text-center lg:mt-[91px]">Sign In</h1>
+            <button class=" flex justify-center items-center font-primaryRegular font-[400] text-[16px] p-[15px] mb-[12px] w-[100%] border-[1px] border-solid  border-[#D3D8DD] rounded-[10px] bg-[#fff] text-[#212529] "
+            >
+                <img src="./assets/images/facebook-blue.svg" class="w-[24px] h-[24px] mr-[15px]" width="24" height="24"
+                     alt="fb"> Continue with Facebook
+            </button>
+            <button class=" flex justify-center items-center font-primaryRegular font-[400] text-[16px] p-[15px] mb-[15px] w-[100%] border-[1px] border-solid  border-[#D3D8DD] rounded-[10px] bg-[#fff] text-[#212529]"
+            >
+                <img src="./assets/images/google-colored.svg" class="w-[24px] h-[24px] mr-[15px]" width="24" height="24"
+                     alt="fb"> Continue with Google
+            </button>
+            <div class="flex items-center  justify-center relative mb-[12px] after:content-[''] after:h-[1px] after:w-[100%] after:bg-[#D3D8DD] after:absolute after:top-1/2 after:left-0 after:z-[-1] after:translate-y-[-50%]">
+                <div class="py-[5px] px-[13px] border border-solid border-[#D3D8DD] font-primaryRegular rounded-[15.5px] text-[#212529] bg-[#F5F7FA]">
+                    or Itix account
+                </div>
+            </div>
+            <div class="mb-[16px] font-[400] text-[16px] font-primaryRegular text-16">
+                <label for="email" class="text-[#212529] mb-[5px]">Email or Phone</label>
+
+                <input id="email"
+                       class="w-full px-[15px] py-[13px] rounded-[10px] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                       type="email" placeholder="reece08@gmail.com">
+            </div>
+
+            <div class="mb-[16px] font-[400] text-[16px] font-primaryRegular">
+                <label for="password" class="text-[#212529] mb-[5px]">password</label>
+                <div class="relative">
+                    <input id="password"
+                           class="w-full px-[15px] pl-[13px] pr-[27px] rounded-[10px] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                           type="password" placeholder="••••••••">
+                    <button class="top-1/2 right-[3px] p-[7px] absolute translate-y-[-50%] cursor-pointer"
+                            id="password-img">
+
+                        <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
+                             class=" w-[14px] h-[10px] "
+                        >
+                    </button>
+                </div>
+            </div>
+
+            <div class="mb-[8px]">
+                <label class="flex  items-center  font-[400] text-[14px] text-[#6c757d] font-primaryRegular"> <input type="checkbox" class="w-[16px] h-[16px] mr-[8px]"> I agree to the &nbsp;<a href="#" class="text-[#007BFF] cursor-pointer"> Terms of Service </a>&nbsp; and &nbsp;<a
+                        href="#" class="text-[#007BFF] cursor-pointer">Privacy Policy </a> </label>
+            </div>
+            <div class="mb-[8px]">
+                <label class="flex  items-center  font-[400] text-[14px] text-[#6c757d] font-primaryRegular"> <input type="checkbox" class="w-[16px] h-[16px] mr-[8px]"> I agree to the &nbsp;<a href="#" class="text-[#007BFF] cursor-pointer"> Terms of Service </a> &nbsp; and &nbsp;<a
+                        href="#" class="text-[#007BFF] cursor-pointer">Privacy Policy </a> </label>
+            </div>
+            <div class="mb-[16px]">
+                <label class="flex  items-center  font-[400] text-[14px] text-[#6c757d] font-primaryRegular"> <input type="checkbox" class="w-[16px] h-[16px] mr-[8px]"> I agree to the &nbsp;<a href="#" class="text-[#007BFF] cursor-pointer"> Terms of Service </a> &nbsp;and &nbsp;<a
+                        href="#" class="text-[#007BFF] cursor-pointer">Privacy Policy </a> </label>
+            </div>
+
+            <button class=" flex justify-center items-center  font-[500] text-[16px] py-[15px] mb-[16px] w-[100%]  border-none rounded-[10px] bg-[#007BFF] text-[#F8F9FA]"
+            >
+                Sign In
+            </button>
+            <p class="text-center mb-[5px] font-[400] text-[14px] text-[#6c757d] font-primaryRegular">Don’t have an account? &nbsp;<a class="text-[#007BFF] cursor-pointer" >Sign up</a></p>
+            <p class="text-center mb-[68px] font-[400] text-[14px] text-[#6c757d] font-primaryRegular"><a class="text-[#007BFF] cursor-pointer" >Forgot password?</a></p>
+
+        </div>
+
+    </main>
+    <footer class="bg-black">
+        <div class="pt-[20px] md:pt-[55px] pb-[25px]">
+            <div class="container mx-auto px-[8px]">
+                <div class="md:flex md:items-center">
+                    <img src="assets/images/logo.png" width="115" height="44" alt="" class="mb-[25px] md:mb-[0]">
+                    <nav class="ml-[-15px] md:ml-auto font-primaryRegular text-gray-3">
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Contact</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Privecy Policy</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Terms</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Cookies</a>
+                    </nav>
+                </div>
+                <div class="flex items-center mt-[25px] pt-[25px] pb-[15px] md:pb-[42px] border-t-[1px] border-gray-4">
+                    <div class="text-gray font-primaryRegular">©2024 Itix LTD<span class="hidden md:inline-block">, all rights reserved</span>
+                    </div>
+                    <nav class="ml-auto flex">
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/youtube.svg" alt="">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let passwordInputIsPasswordType = true;
+        document.getElementById('password-img').addEventListener('mousedown', () => {
+            document.getElementById('password').type = passwordInputIsPasswordType ? 'text' : 'password';
+            passwordInputIsPasswordType = !passwordInputIsPasswordType;
+        });
+    </script>
+</body>
+
+</html>
