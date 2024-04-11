@@ -2150,6 +2150,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-top: 30px;
 }
 
+.pt-\[50px\] {
+  padding-top: 50px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2910,6 +2914,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .lg\:pt-\[40px\] {
     padding-top: 40px;
+  }
+
+  .lg\:pt-\[50px\] {
+    padding-top: 50px;
   }
 
   .lg\:text-\[16px\] {
