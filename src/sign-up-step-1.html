@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+<body class="bg-[#F5F7FA] font-primaryMedium min-h-screen flex flex-col justify-between">
+<main class="content overflow-hidden px-[16px] bg-[url('../../assets/images/bg-1.svg')] bg-no-repeat bg-center">
+    <div class="mx-auto max-w-[382px]">
+        <div class="mt-[45px] md:mt-[56px] flex justify-center w-[100%] ">
+            <div class="flex">
+                <div class=" flex  items-center after:content-[''] after:h-[2px] after:w after:static after:inline-block after:w-[48px] after:md:w-[100px] after:bg-[#B7BFCB]">
+                <span class=" block font-[500] text-[16px] text-[#495AFF] w-[26px] h-[26px] text-center align-middle border-[2px] border-solid border-[#495AFF] rounded-[50%] mr-[16px]">
+                    1
+                </span>
+                </div>
+                <div class=" flex  items-center after:content-[''] after:h-[2px] after:w after:static after:inline-block after:w-[48px] after:md:w-[100px] after:bg-[#B7BFCB]">
+                <span class=" block font-[500] text-[16px] text-[#B7BFCB] w-[26px] h-[26px] text-center align-middle border-[2px] border-solid border-[#B7BFCB] rounded-[50%] ml-[16px] mr-[16px]">
+                    2
+                </span>
+                </div>
+                <div class=" relative">
+                <span class=" block font-[500] text-[16px] text-[#B7BFCB] w-[26px] h-[26px] text-center align-middle border-[2px] border-solid border-[#B7BFCB] rounded-[50%] ml-[16px]">
+                    3
+                </span>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-default text-[28px]   font-[600] capitalize mb-[34px] mt-[59px] text-center md:mt-[93px] lg:mt-[66px]">
+            Sign Up</h1>
+        <button class=" flex justify-center items-center font-primaryRegular font-[400] text-[16px] p-[15px] mb-[12px] w-[100%] border-[1px] border-solid  border-[#D3D8DD] rounded-[10px] bg-[#fff] text-[#212529] "
+        >
+            <img src="./assets/images/facebook-blue.svg" class="w-[24px] h-[24px] mr-[15px]" width="24" height="24"
+                 alt="fb"> Continue with Facebook
+        </button>
+        <button class=" flex justify-center items-center font-primaryRegular font-[400] text-[16px] p-[15px] mb-[15px] w-[100%] border-[1px] border-solid  border-[#D3D8DD] rounded-[10px] bg-[#fff] text-[#212529]"
+        >
+            <img src="./assets/images/google-colored.svg" class="w-[24px] h-[24px] mr-[15px]" width="24" height="24"
+                 alt="fb"> Continue with Google
+        </button>
+        <div class="flex items-center  justify-center relative mb-[12px] after:content-[''] after:h-[1px] after:w-[100%] after:bg-[#D3D8DD] after:absolute after:top-1/2 after:left-0 after:z-[-1] after:translate-y-[-50%]">
+            <div class="py-[5px] px-[13px] border border-solid border-[#D3D8DD] font-primaryRegular rounded-[15.5px] text-[#212529] bg-[#F5F7FA]">
+                or Itix account
+            </div>
+        </div>
+        <div class="mb-[12px] font-[400] text-[16px] font-primaryRegular text-16">
+            <label for="email" class="text-[#212529] mb-[5px]">Email or Phone</label>
+
+            <input id="email"
+                   class="w-full px-[15px] py-[13px] rounded-[10px] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                   type="email" placeholder="reece08@gmail.com">
+        </div>
+
+        <div class="mb-[12px] font-[400] text-[16px] font-primaryRegular">
+            <label for="password" class="text-[#212529] mb-[5px]">password</label>
+            <div class="relative mb-[8px]">
+                <input id="password"
+                       class="w-full px-[15px] pl-[13px] pr-[27px] rounded-[10px] border-[2px] border-solid border-[#DC3545] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.08),0px_4px_12px_-1px_rgba(0,0,0,0.12)] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                       type="password" placeholder="••••••••">
+                <button class="top-1/2 right-[3px] p-[7px] absolute translate-y-[-50%] cursor-pointer"
+                        id="password-img">
+
+                    <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
+                         class=" w-[14px] h-[10px] "
+                    >
+                </button>
+            </div>
+            <p class="text-[#212529] text-[14px]">Your password must contain:</p>
+            <p class="text-[14px] text-[#28A745] flex items-center mb-[3px]">
+                <svg class=" block mt-[-2px]" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z" fill="#28A745"/>
+                    <path d="M4 7L6.25 9L10 5" stroke="#28A745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="ml-[6px]">At least 8 characters</span>
+            </p>
+            <p class="text-[14px] text-[#DC3545] flex items-center mb-[3px]">
+                <svg class="block mt-[-2px]" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z" fill="#DC3545"/>
+                    <path d="M4 7L6.25 9L10 5" stroke="#DC3545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="ml-[6px]">Include a letter</span>
+            </p>
+            <p class="text-[14px] text-[#6C757D] flex items-center">
+                <svg class="block mt-[-2px]" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z" fill="#D3D8DD"/>
+                    <path d="M4 7L6.25 9L10 5" stroke="#6C757D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="ml-[6px]">Include a number</span>
+            </p>
+        </div>
+
+
+
+        <div class="mb-[16px] font-[400] text-[16px] font-primaryRegular">
+            <label for="repeat-password" class="text-[#212529] mb-[5px]">password</label>
+            <div class="relative">
+                <input id="repeat-password"
+                       class="w-full px-[15px] pl-[13px] pr-[27px] rounded-[10px] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                       type="password">
+                <button class="top-1/2 right-[3px] p-[7px] absolute translate-y-[-50%] cursor-pointer"
+                        id="repeat-password-img">
+
+                    <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
+                         class=" w-[14px] h-[10px] "
+                    >
+                </button>
+            </div>
+        </div>
+
+        <div class="mb-[8px]">
+            <label class="flex  items-center  font-[400] text-[14px] text-[#6c757d] font-primaryRegular"> <input
+                    type="checkbox" class="w-[16px] h-[16px] mr-[8px]"> I agree to the &nbsp;<a href="#"
+                                                                                                class="text-[#007BFF] cursor-pointer">
+                Terms of Service </a>&nbsp; and &nbsp;<a
+                    href="#" class="text-[#007BFF] cursor-pointer">Privacy Policy </a> </label>
+        </div>
+        <div class="mb-[8px]">
+            <label class="flex  items-center  font-[400] text-[14px] text-[#6c757d] font-primaryRegular"> <input
+                    type="checkbox" class="w-[16px] h-[16px] mr-[8px]"> I agree to the &nbsp;<a href="#"
+                                                                                                class="text-[#007BFF] cursor-pointer">
+                Terms of Service </a> &nbsp; and &nbsp;<a
+                    href="#" class="text-[#007BFF] cursor-pointer">Privacy Policy </a> </label>
+        </div>
+        <div class="mb-[16px]">
+            <label class="flex  items-center  font-[400] text-[14px] text-[#6c757d] font-primaryRegular"> <input
+                    type="checkbox" class="w-[16px] h-[16px] mr-[8px]"> I agree to the &nbsp;<a href="#"
+                                                                                                class="text-[#007BFF] cursor-pointer">
+                Terms of Service </a> &nbsp;and &nbsp;<a
+                    href="#" class="text-[#007BFF] cursor-pointer">Privacy Policy </a> </label>
+        </div>
+
+        <button class=" flex justify-center items-center  font-[500] text-[16px] py-[15px] mb-[16px] w-[100%]  border-none rounded-[10px] bg-[#007BFF] text-[#F8F9FA]"
+        >
+            Sign In
+        </button>
+        <p class="text-center mb-[5px] font-[400] text-[14px] text-[#6c757d] font-primaryRegular">Don’t have an account?
+            &nbsp;<a class="text-[#007BFF] cursor-pointer">Sign up</a></p>
+        <p class="text-center mb-[68px] font-[400] text-[14px] text-[#6c757d] font-primaryRegular"><a
+                class="text-[#007BFF] cursor-pointer">Forgot password?</a></p>
+
+    </div>
+
+</main>
+<footer class="bg-black">
+    <div class="pt-[20px] md:pt-[55px] pb-[25px]">
+        <div class="container mx-auto px-[8px]">
+            <div class="md:flex md:items-center">
+                <img src="assets/images/logo.png" width="115" height="44" alt="" class="mb-[25px] md:mb-[0]">
+                <nav class="ml-[-15px] md:ml-auto font-primaryRegular text-gray-3">
+                    <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Contact</a>
+                    <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Privecy Policy</a>
+                    <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Terms</a>
+                    <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Cookies</a>
+                </nav>
+            </div>
+            <div class="flex items-center mt-[25px] pt-[25px] pb-[15px] md:pb-[42px] border-t-[1px] border-gray-4">
+                <div class="text-gray font-primaryRegular">©2024 Itix LTD<span class="hidden md:inline-block">, all rights reserved</span>
+                </div>
+                <nav class="ml-auto flex">
+                    <a href="#" class="ml-[14px] hover:opacity-50">
+                        <img src="assets/images/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="ml-[14px] hover:opacity-50">
+                        <img src="assets/images/instagram.svg" alt="">
+                    </a>
+                    <a href="#" class="ml-[14px] hover:opacity-50">
+                        <img src="assets/images/youtube.svg" alt="">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('password-img').addEventListener('mousedown', () => {
+        changePasswordType('password');
+    })
+
+    document.getElementById('repeat-password-img').addEventListener('mousedown', () => {
+        changePasswordType('repeat-password');
+    })
+    function changePasswordType(id) {
+        const el = document.getElementById(id);
+        el.type = el.type === 'password' ? 'text' : 'password';
+    }
+
+</script>
+</body>
+
+</html>
