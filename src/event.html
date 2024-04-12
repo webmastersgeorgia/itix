@@ -162,7 +162,7 @@
                         <div class="rounded-[8px] ">
                             <h3 class=" text-[20px]">DATE AND TIME</h3>
                             <div class="font-primaryRegular text-[16px] mt-[12px]">26th of Jan,</div>
-                            <div class="font-primaryRegular text-[16px]">Friday - 20:00</div>
+                            <div class="font-primaryRegular text-[16px]">Friday - 20:00</div> 
                         </div>
                     </div>
                     <div>
@@ -325,7 +325,7 @@
                      </div>
                  </div>
                  <div class="lg:w-[30%] lg:block hidden " >
-                    <div class="inline-flex w-[100%]"> 
+                    <div class="inline-flex w-[100%]" id="event-payment-info">
                         <div class="w-[195px] ml-[32px] ">
                             <div class="w-[100%] h-[155px] rounded-[8px] mt-[34px] border  border-gray-3 text-center bg-white ">
                                 <h3 class="mt-[45px]">From 50₾</h3>
@@ -430,19 +430,22 @@
     }
     }, 1000);
         var index = 1;
-    
-        const navigationCont = document.getElementById("navigation-content"); 
-   
+        const navigationCont = document.getElementById("navigation-content");
+        const paymentInfo = document.getElementById("event-payment-info");
         window.addEventListener("scroll", function() {
-            if(window.screen.width >= 960)index = 0
+            const scrollPosition = window.scrollY
+            if(scrollPosition > 500 ){
+                paymentInfo.classList.add("fixed", "top-[60px]")
+            }else{
+                paymentInfo.classList.remove("fixed", "top-[60px]")
+            }
+            if(window.screen.width >= 960)index = 0; else index = 1;
             const navigation = document.getElementsByClassName("event-navigation")[index]; 
             if (navigationCont.getBoundingClientRect().top < 10) {
-                navigation.classList.add("fixed");
-                navigation.classList.add("top-0");
+                navigation.classList.add("fixed", "top-0");
             }
             if (navigationCont.getBoundingClientRect().top > 0) {
-                navigation.classList.remove("fixed");
-                navigation.classList.remove("top-0");
+                navigation.classList.remove("fixed", "top-0");
             }
         });
 </script>
