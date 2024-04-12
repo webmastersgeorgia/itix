@@ -33,16 +33,16 @@
 <main class="content overflow-hidden min-h-[1000px]">
         <!-- background -->
         <section>
-            <div class="bg-[url('../../assets/images/coldplay.jpg')]   bg-no-repeat  bg-cover w-[100%] h-[400px]  ">
-                <div class="absolute w-[100%] h-[400px] backdrop-blur-md bg-gray/10">
-                      <div class="flex mt-[32px] md:mt-[101px] lg:mt-[105px] flex-row lg:ml-[72px] md:ml-[38px] text-gray-1">
-                          <div >
-                              <img src="../src/assets/images/coldplay.jpg"  class="w-[364px] h-[190px] rounded-[7px] object-left-top object-cover" alt="img" />
+            <div class="bg-[url('../../assets/images/coldplay.jpg')]   bg-no-repeat  bg-cover w-full h-[400px]  ">
+                <div class="flex w-full h-[400px] backdrop-blur-md bg-rgb(0, 0, 0, 0.30) lg:justify-start lg:items-start justify-center items-center">
+                      <div class="flex xl:ml-[72px] lg:ml-[42px] ml-[20px]  lg:mt-[105px] lg:flex-row flex-col  text-gray-1">
+                          <div class="inline-block">
+                              <img src="../src/assets/images/coldplay.jpg"  class="lg:w-[364px] lg:h-[190px] w-[285px] h-[149px]  rounded-[7px] object-left-top object-cover" alt="img" />
                           </div>
-                          <div class="w-[384px] lg:ml-[38px]">
-                              <h1 class="text-[32px] capitalize leading-normal font-semibold">Coldplay Grand Show 2024 Batumi is waiting</h1>
-                              <div class="mt-[20px]"><span class="text-[20px]">Fri, 26 Jan</span><span class="text-[20px] ml-[30px]"><img src="assets/images/location.svg" class="inline"  alt=""  /> Batumi Arena</span></div>
-                              <div class="mt-[20px] rounded-[30px] py-[4px]  px-[32px]  border-2 inline-block"><a href="#">Share</a></div>
+                          <div class="lg:w-[384px] w-[285px] lg:ml-[38px] ml-0 inline-block">
+                              <h1 class="lg:text-[32px] lg:mt-0 mt-[10px] text-[20px] capitalize leading-normal font-semibold">Coldplay Grand Show 2024 Batumi is waiting</h1>
+                              <div class="lg:mt-[20px] mt-[10px] lg:text-[20px] text-[16px]"><span>Fri, 26 Jan</span><span class="ml-[30px]"><img src="assets/images/location.svg" class="inline"  alt=""  /> Batumi Arena</span></div>
+                              <div class="lg:mt-[20px] mt-[10px] rounded-[30px] py-[4px]  px-[32px]  border-2 inline-block"><a href="#">Share</a></div>
                           </div>
                       </div>
                 </div>
@@ -52,9 +52,9 @@
         <!-- Navigation -->
         <section>
             <div id="navigation-content">
-                <div class=" h-[68px] bg-white shadow-md w-full z-10" id="navigation">
+                <div class=" h-[68px] bg-white shadow-md w-full z-10 event-navigation" >
                     <div class="container mx-auto relative">
-                        <div class="flex pt-[16px]">
+                        <div class="lg:flex pt-[16px] hidden ">
                             <nav class="flex">
                                 <a type="button" href="#" class="uppercase mr-[24px] text-default p-[0px_30px_5px_30px] border-b-[2px]">about</a>
                                 <a type="button" href="#" class="uppercase mr-[24px] text-gray hover:border-b-[2px] pb-[5px] ">gallery</a>
@@ -62,8 +62,8 @@
                                 <a type="button" href="#" class="uppercase mr-[24px] text-gray hover:border-b-[2px] pb-[5px] ">return policy</a>
                             </nav>
                         </div>
-                        <div class="absolute top-[7px] left-[800px]">
-                            <div class="inline-flex -">
+                        <div class="lg:absolute flex justify-center items-center lg:pt-0 pt-[7px] lg:justify-start lg:items-start top-[7px] xl:right-[120px] lg:right-[90px]">
+                            <div class="inline-flex ">
                                 <div class="flex flex-col text-center">
                                     <span class="font-primarySemiBold text-[#D80027] text-[20px]" id="c_days">00</span>
                                     <span class="uppercase text-[#F76D6D]  font-primaryRegular text-[14px]">DAYS</span>
@@ -85,7 +85,7 @@
                                 <div class="flex ml-[25px]">
                                     <span class="m-auto text-[22px]">:</span>
                                 </div>
-                                <div class="flex flex-col text-center ml-20px]">
+                                <div class="flex flex-col text-center ml-[30px]">
                                     <span class="font-primarySemiBold text-default text-[20px]" id="c_seconds">00</span>
                                     <span class="uppercase text-default font-primaryRegular text-[14px]">SECONDS</span>
                                 </div>
@@ -95,10 +95,88 @@
                     </div>
                 </div>
             </div>
+            <div></div>
         </section>
+    <!--mobile navigation-->
+        <section>
+            <div class="w-full  border-t border-gray-3   lg:hidden event-navigation">
+                <div class="bg-white p-[12px_8px] flex items-center shadow-[0_1px_4px_0_rgba(0,0,0,0.30)]">
+                    <h1 class="font-primarySemiBold text-default text-[20px] font-[500] uppercase">About</h1>
+                    <div class="relative ms-auto">
+                        <button type="button" class="menu-toggle">
+                            <img src="assets/images/menu.svg" alt="">
+                        </button>
+                        <nav class="menu bg-gray-2 rounded-[4px] absolute shadow-[0_1px_2px_0_rgba(0,0,0,0.30)] right-0 hidden">
+                            <a href="#" class="block font-primaryRegular p-[12px_17px] uppercase whitespace-nowrap">about</a>
+                            <a href="#" class="block font-primaryRegular p-[12px_17px] uppercase whitespace-nowrap">gallery</a>
+                            <a href="#" class="block font-primaryRegular p-[12px_17px] uppercase whitespace-nowrap">organiser</a>
+                            <a href="#" class="block font-primaryRegular p-[12px_17px] uppercase whitespace-nowrap">eturn policy</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!--mobile navigation-->
+        
 
-    <!-- Navigation -->
-        <div class="container px-[8px] mx-auto">
+
+    <!-- only on mobile -->
+        <div class="container px-[8px] mx-auto ">
+            <section>
+                <div class="columns-2 mt-[5px] lg:hidden">
+                    <div class="rounded-[8px] ">
+                        <h3 class="mt-[16px] text-[20px]">DATE AND TIME</h3>
+                        <div class="font-primaryRegular text-[16px] mt-[12px]">26th of Jan,</div>
+                        <div class="font-primaryRegular text-[16px]">Friday - 20:00</div>
+                    </div>
+                    <div class="inline-block w-[100%] max-w-[191px] h-[97px] rounded-[8px] mt-[20px]  border  border-gray-3 text-center bg-white ">
+                        <h3 class="mt-[6px]">From 50₾</h3>
+                        <button class="p-[6px_16px_6px_16px] bg-[#007BFF] rounded-[4px] text-white mt-[6px]">Find Ticket</button>
+                    </div>
+                </div>
+                <div class="columns-2 mt-[5px] lg:hidden">
+                    <div>
+                        <div class="rounded-[8px]   ">
+                            <h3 class="text-[20px]">VENUE</h3>
+                            <div class="font-primaryRegular text-[16px] mt-[12px]">Batumi Arena,</div>
+                            <div class="font-primaryRegular text-[16px]">Grigoleti street 47</div>
+                            <a href="#" class="text-[16px] mt-[8px] text-blue" >show the google map</a>
+                        </div>
+                    </div>
+                    <div class="pt-[15px]">
+                        <div class="max-w-[191px] w-[100%] h-[95px] mt-[10px] rounded-[8px] bg-[#E4A32D] rounded-b-[8px]  ">
+                            <div class="bg-[#1F3040] rounded-t-[8px] h-[62px] flex flex-col items-center">
+                                <img src="assets/images/solo-bank1.png" class="w-[29px] h-auto inline-flex" alt="">
+                                <img src="assets/images/solo-bank.png" class="inline-flex" alt="">
+        
+                            </div>
+                            <div class="h-[24px]  inline-flex w-[100%]">
+                                <span class="m-auto text-center w-[100%]">solo members 30% off</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- if sale has not yet started -->
+                <div class="columns-2  lg:hidden mt-[20px]">
+                    <div>
+                        <div class="rounded-[8px] ">
+                            <h3 class=" text-[20px]">DATE AND TIME</h3>
+                            <div class="font-primaryRegular text-[16px] mt-[12px]">26th of Jan,</div>
+                            <div class="font-primaryRegular text-[16px]">Friday - 20:00</div> 
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rounded-[8px] ">
+                            <h3 class="text-[20px] ">VENUE</h3>
+                            <div class="font-primaryRegular text-[16px] mt-[12px]">Batumi Arena,</div>
+                            <div class="font-primaryRegular text-[16px]">Grigoleti street 47</div>
+                            <a href="#" class="text-[16px] mt-[8px] text-blue" >show the google map</a>
+                        </div>
+                    </div> 
+                </div>
+                <!-- if sale has not yet started -->
+            </section>
+            <!-- only on mobile -->
              <div class="flex flex-row">
                  <div class="lg:w-[70%] w-[100%]  lg:border-r border-0 border-gray-3">
                      <div class="xl:w-[calc(100%-140px)] lg:w-[calc(100%-30px)] md:w-[calc(100%-10px)]">
@@ -106,46 +184,45 @@
                         <section>
                             <div class="mt-[30px] w-[100%]">
                                 <h2 class="uppercase text-[20px]">about</h2>
-                                <div class="mt-[20px] font-primaryRegular">
-                                    <div class="columns-3">
-                                        <div class="flex flex-row">
+                                <div class="font-primaryRegular">
+                                    <div class="lg:columns-3 columns-2">
+                                        <div class="inline-flex  flex-row mt-[20px]">
                                             <div class="inline-flex h-[42px]"><img src="assets/images/over18.png" class=" w-[26px] m-auto" alt=""></div>
                                             <div class="inline-block pl-[16px] ">
                                                 <h3 class="text-[16px] font-primaryMedium">Adults Over 18+</h3>
                                                 <span class="text-gray text-[14px]">Footnote text here</span>
                                             </div>
                                         </div>
-                                        <div class="flex flex-row">
+                                        <div class="inline-flex flex-row mt-[20px]">
                                             <div class="inline-flex h-[42px]"><img src="assets/images/parking.png" class=" w-[26px] m-auto" alt=""></div>
                                             <div class="inline-block pl-[16px] ">
                                                 <h3 class="text-[16px] font-primaryMedium">Free Parking</h3>
                                                 <span class="text-gray text-[14px]">Footnote text here</span>
                                             </div>
                                         </div>
-                                        <div class="flex flex-row">
+                                        <div class="inline-flex flex-row mt-[20px]">
                                             <div class="inline-flex h-[42px]"><img src="assets/images/cap.png" class=" w-[26px] m-auto" alt=""></div>
                                             <div class="inline-block pl-[16px] ">
                                                 <h3 class="text-[16px] font-primaryMedium">Free Soft Drinks</h3>
                                                 <span class="text-gray text-[14px]">Footnote text here</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="columns-3 mt-[30px]">
-                                        <div class="flex flex-row">
+
+                                        <div class="inline-flex flex-row mt-[20px]">
                                             <div class="inline-flex h-[42px] "><img src="assets/images/nosmoking.png" class=" w-[26px] m-auto" alt=""></div>
                                             <div class="inline-block pl-[16px] ">
                                                 <h3 class="text-[16px] font-primaryMedium">No Smoking</h3>
                                                 <span class="text-gray text-[14px]">Footnote text here</span>
                                             </div>
                                         </div>
-                                        <div class="flex flex-row">
+                                        <div class="inline-flex flex-row mt-[20px]">
                                             <div class="inline-flex h-[42px]"><img src="assets/images/pet.png" class=" w-[26px] m-auto" alt=""></div>
                                             <div class="inline-block pl-[16px] ">
                                                 <h3 class="text-[16px] font-primaryMedium">Pet Friendly</h3>
                                                 <span class="text-gray text-[14px]">Footnote text here</span>
                                             </div>
                                         </div>
-                                        <div class="flex flex-row">
+                                        <div class="inline-flex flex-row mt-[20px]">
                                             <div class="inline-flex h-[42px]"><img src="assets/images/WheelchairSymbol.png" class=" w-[26px] m-auto" alt=""></div>
                                             <div class="inline-block pl-[16px] text-gray ">
                                                 <h3 class="text-[16px] font-primaryMedium">Wheelchair-Friendly</h3>
@@ -189,22 +266,22 @@
                                 <h2 class="uppercase text-[20px]">GALLERY</h2>
                                 <div class="mt-[10px] font-primaryRegular">
                                     <div class="xl:columns-3  columns-2 w-[100%]">
-                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                        <div class="w-full h-[197px] lg:h-[221px]   bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
                                             <img src="assets/images/noimage.png" class="m-auto " alt="" />
                                         </div>
-                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                        <div class="w-full h-[197px] lg:h-[221px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
                                             <img src="assets/images/noimage.png" class="m-auto " alt="" />
                                         </div>
-                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                        <div class="w-full h-[197px] lg:h-[221px]  bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
                                             <img src="assets/images/noimage.png" class="m-auto " alt="" />
                                         </div>
-                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                        <div class="w-full h-[197px] lg:h-[221px]  bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
                                             <img src="assets/images/noimage.png" class="m-auto " alt="" />
                                         </div>
-                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                        <div class="w-full h-[197px] lg:h-[221px]  bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
                                             <img src="assets/images/noimage.png" class="m-auto " alt="" />
                                         </div>
-                                        <div class="w-[100%] h-[212px] bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
+                                        <div class="w-full h-[197px] lg:h-[221px]  bg-[#ededf5] mt-[10px] inline-flex rounded-[10px]">
                                             <img src="assets/images/noimage.png" class="m-auto " alt="" />
                                         </div>
                                     </div>
@@ -221,9 +298,9 @@
                             <div class="mt-[30px] w-[100%]">
                                 <h2 class="uppercase text-[20px]">ORGANISER</h2>
                                 <div class="mt-[10px] font-primaryRegular">
-                                    <div class="flex flex-row w-[100%]">
-                                        <div class="w-[155px] h-[87px] bg-[#D9D9D9]"></div>
-                                        <div class="ml-[20px] w-[574px]">Under EU rules, a seller must repair, replace, or give you a full or partial refund if something you buy turns out to be faulty or doesn’t look or work as advertised. You always have the right to a minimum 2-year guarantee, at no cost.</div>
+                                    <div class="w-[100%]">
+                                        <img class="w-[155px] h-[87px] bg-[#D9D9D9] float-left m-[4px]"   />
+                                        Under EU rules, a seller must repair, replace, or give you a full or partial refund if something you buy turns out to be faulty or doesn’t look or work as advertised. You always have the right to a minimum 2-year guarantee, at no cost.
                                     </div>
                                 </div>
                                 <div class="mt-[20px]">
@@ -235,11 +312,10 @@
                         <!-- RETURN POLICY -->
                         <section>
                             <div class="mt-[30px] w-[100%] mb-[30px]">
-                                <h2 class="uppercase text-[20px]">ORGANISER</h2>
+                                <h2 class="uppercase text-[20px]">RETURN POLICY</h2>
                                 <div class="mt-[10px] font-primaryRegular">
                                     <div class="flex flex-row w-[100%]">
-                                        <div >Under EU rules, a seller must repair, replace, or give you a full or partial refund if something you buy turns out to be faulty or doesn’t look or work as advertised. You always have the right to a minimum 2-year guarantee, at no cost. However, national rules in your country may give you extra protection.
-                                            You can return any purchase within 14 days without justification (see 14-day cooling-off period). After 14 days, you can usually only ask for a partial or full refund if it's not possible to repair or replace the goods. Please note that you might not be entitled to a refund if the problem is minor (such as a scratch on a CD case).</div>
+                                        <div >Under EU rules, a seller must repair, replace, or give you a full or partial refund if something you buy turns out to be faulty or doesn’t look or work as advertised. You always have the right to a minimum 2-year guarantee, at no cost. However, national rules in your country may give you extra protection. You can return any purchase within 14 days without justification (see 14-day cooling-off period). After 14 days, you can usually only ask for a partial or full refund if it's not possible to repair or replace the goods. Please note that you might not be entitled to a refund if the problem is minor (such as a scratch on a CD case).</div>
                                     </div>
                                 </div>
 
@@ -249,8 +325,8 @@
                      </div>
                  </div>
                  <div class="lg:w-[30%] lg:block hidden " >
-                    <div class="inline-flex w-[100%]">
-                        <div class="w-[195px] ml-[32px]">
+                    <div class="inline-flex w-[100%]" id="event-payment-info">
+                        <div class="w-[195px] ml-[32px] ">
                             <div class="w-[100%] h-[155px] rounded-[8px] mt-[34px] border  border-gray-3 text-center bg-white ">
                                 <h3 class="mt-[45px]">From 50₾</h3>
                                 <button class="p-[12px_24px_12px_24px] bg-[#007BFF] rounded-[4px] text-white mt-[10px]">Find Ticket</button>
@@ -353,20 +429,26 @@
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
     }, 1000);
-        const navigation = document.getElementById("navigation"); // Replace with your div's actual ID
-        const navigationCont = document.getElementById("navigation-content"); // Replace with your div's actual ID
+        var index = 1;
+        const navigationCont = document.getElementById("navigation-content");
+        const paymentInfo = document.getElementById("event-payment-info");
         window.addEventListener("scroll", function() {
-            console.log(navigationCont.getBoundingClientRect().top)
+            const scrollPosition = window.scrollY
+            if(scrollPosition > 500 ){
+                paymentInfo.classList.add("fixed", "top-[60px]")
+            }else{
+                paymentInfo.classList.remove("fixed", "top-[60px]")
+            }
+            if(window.screen.width >= 960)index = 0; else index = 1;
+            const navigation = document.getElementsByClassName("event-navigation")[index]; 
             if (navigationCont.getBoundingClientRect().top < 10) {
-                navigation.classList.add("fixed");
-                navigation.classList.add("top-0");
+                navigation.classList.add("fixed", "top-0");
             }
             if (navigationCont.getBoundingClientRect().top > 0) {
-                navigation.classList.remove("fixed");
-                navigation.classList.remove("top-0");
+                navigation.classList.remove("fixed", "top-0");
             }
         });
 </script>
-
+<script src="assets/js/text.js"></script>
 </body>
 </html>

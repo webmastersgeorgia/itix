@@ -158,8 +158,64 @@
                     </div>
                 </div>
             </div>
+            <h2 class="text-[28px] mb-[15px] capitalize">Payment Method</h2>
+            <div class="mb-[24px]">
+                <div class="pay-item">
+                    <label for="google-pay" class="flex items-center bg-white p-[22px_26px] border-[1px] border-[#D3D8DD] cursor-pointer">
+                        <input type="radio" id="google-pay" name="paymentMethod" class="w-[24px] h-[24px]">
+                        <img src="assets/images/pay-google.png" class="ms-auto" alt="">
+                    </label>
+                </div>
+                <div class="pay-item">
+                    <label for="apple-pay" class="flex items-center bg-white p-[22px_26px] border-[1px] border-[#D3D8DD] cursor-pointer mt-[-1px]">
+                        <input type="radio" id="apple-pay" name="paymentMethod" class="w-[24px] h-[24px]">
+                        <img src="assets/images/pay-apple.png" class="ms-auto" alt="">
+                    </label>
+                </div>
+                <div class="pay-item">
+                    <label for="tbc-pay" class="flex items-center bg-white p-[22px_26px] border-[1px] border-[#D3D8DD] cursor-pointer mt-[-1px]">
+                        <input type="radio" id="tbc-pay" name="paymentMethod" class="w-[24px] h-[24px]">
+                        <img src="assets/images/pay-tbc.png" class="ms-auto" alt="">
+                    </label>
+                </div>
+                <div class="pay-item">
+                    <label for="bog-pay" class="flex items-center bg-white p-[22px_26px] border-[1px] border-[#D3D8DD] cursor-pointer mt-[-1px]">
+                        <input type="radio" id="bog-pay" name="paymentMethod" class="w-[24px] h-[24px]">
+                        <img src="assets/images/pay-bog.png" class="ms-auto" alt="">
+                    </label>
+                </div>
+                <div class="pay-item">
+                    <label for="solo-pay" class="flex items-center bg-white p-[22px_26px] border-[1px] border-[#D3D8DD] cursor-pointer mt-[-1px]">
+                        <input type="radio" id="solo-pay" name="paymentMethod" class="w-[24px] h-[24px]">
+                        <img src="assets/images/pay-solo.png" class="ms-auto" alt="">
+                    </label>
+                    <div class="pay-sub-items hidden w-[75%] ml-[25%]">
+                        <div class="pay-sub-item">
+                            <label for="solo-pay-x" class="flex items-center bg-white p-[22px_26px] border-[1px] border-[#D3D8DD] cursor-pointer mt-[-1px]">
+                                <input type="radio" id="solo-pay-x" name="paymentSubMethod" class="w-[24px] h-[24px]">
+                                <span class="ms-auto uppercase text-gray">SOLO X</span>
+                            </label>
+                        </div>
+                        <div class="pay-sub-item">
+                            <label for="solo-pay-premium" class="flex items-center bg-white p-[22px_26px] border-[1px] border-[#D3D8DD] cursor-pointer mt-[-1px]">
+                                <input type="radio" id="solo-pay-premium" name="paymentSubMethod" class="w-[24px] h-[24px]">
+                                <span class="ms-auto uppercase text-gray">SOLO PREMIUM</span>
+                            </label>
+                        </div>
+                        <div class="pay-sub-item">
+                            <label for="solo-pay-club" class="flex items-center bg-white p-[22px_26px] border-[1px] border-[#D3D8DD] cursor-pointer mt-[-1px]">
+                                <input type="radio" id="solo-pay-club" name="paymentSubMethod" class="w-[24px] h-[24px]">
+                                <span class="ms-auto uppercase text-gray">SOLO CLUB</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label class="flex items-center font-[400] text-[14px] text-[#6c757d] font-primaryRegular">
+                <input type="checkbox" class="agree-terms w-[16px] h-[16px] mr-[8px] mb-[2px]"> I agree to the &nbsp;<a href="#" class="text-[#007BFF] cursor-pointer"> Terms of Service </a>&nbsp; and &nbsp;<a href="#" class="text-[#007BFF] cursor-pointer">Privacy Policy </a> 
+            </label>
         </div>
-        <div class="lg:w-[45%] xl:w-[35%] lg:flex lg:flex-col p-[25px_8px_32px_8px] lg:p-[15px_20px_24px_20px] bg-white border-l-[1px] border-[#D3D8DD]">
+        <div class="checkout-info lg:w-[45%] xl:w-[35%] lg:flex lg:flex-col p-[25px_8px_32px_8px] lg:p-[15px_20px_24px_20px] bg-white border-l-[1px] border-[#D3D8DD]">
             <div class="flex items-center mb-[15px]">
                 <h2 class="capitalize text-[20px] pr-[10px]">Your Tickets</h2>
                 <div class="ms-auto flex items-center border-[1px] border-[#D3D8DD] rounded-[30px] p-[8px_15px] text-red">
@@ -270,12 +326,26 @@
                     </div>
                 </div>
             </div>
-            <button class="w-full capitalize p-[15px_20px] bg-blue text-white rounded-[10px] hover:opacity-80 mt-auto">Continue</button>
         </div>
     </section>
+    <div class="checkout-block hidden flex items-center bg-white w-[100%] border-t-[1px] border-t-[#D3D8DD] p-[32px_72px]">
+        <div class="text-center pr-[10px]">
+            <div class="capitalize mb-[2px]">Tickets</div>
+            <div class="text-[28px]">4</div>
+        </div>
+        <div class="ms-auto flex items-center">
+            <div class="text-center pr-[135px]">
+                <div class="capitalize mb-[2px] whitespace-nowrap">Total Amount</div>
+                <div class="text-[28px]">110₾</div>
+            </div>
+            <button class="flex justify-center items-center text-[16px] p-[14px_45px] w-[100%] border-none rounded-[10px] bg-[#007BFF] text-[#F8F9FA] hover:opacity-80">
+                Check Out
+            </button>
+        </div>
+    </div>
 </main>
 <!-- footer -->
-<footer class="bg-black">
+<footer class="footer bg-black">
     <div class="pt-[20px] md:pt-[55px] pb-[25px]">
         <div class="container mx-auto px-[8px]">
             <div class="md:flex md:items-center">
@@ -304,5 +374,48 @@
         </div>
     </div>
 </footer>
+<!-- JS custom -->
+<script>
+    const payItemRadios = document.querySelectorAll('.pay-item > label > input');
+    const paySubItems = document.querySelectorAll('.pay-sub-items');
+    let payItemRadioIsChecked = false;
+    const agreeTerms = document.querySelector('.agree-terms');
+    let agreeTermsIsChecked = false;
+    let showCheckoutBlock = false;
+    const checkoutBlock = document.querySelector('.checkout-block');
+
+    payItemRadios.forEach(payItemRadio => {
+        payItemRadio.onchange = function() {
+
+            paySubItems.forEach(paySubItem => {
+                paySubItem.classList.add('hidden');
+            });
+
+            payItemRadio.closest('.pay-item').querySelector('.pay-sub-items').classList.remove('hidden');
+
+            payItemRadioIsChecked = true;
+
+            toggleCheckoutBlock();
+        }
+    });
+
+    agreeTerms.onchange = function() {
+        if (agreeTerms.checked) {
+            agreeTermsIsChecked = true;
+        } else {
+            agreeTermsIsChecked = false;
+        }
+
+        toggleCheckoutBlock();
+    }
+
+    function toggleCheckoutBlock() {
+        if (payItemRadioIsChecked == true && agreeTermsIsChecked == true) {
+            checkoutBlock.classList.remove('hidden');
+        } else {
+            checkoutBlock.classList.add('hidden');
+        }
+    }
+</script>
 </body>
 </html>
