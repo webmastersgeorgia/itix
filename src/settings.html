@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <!-- custom -->
     <link href="./assets/css/styles.css" rel="stylesheet">
-    <title>Activity History</title>
+    <title>Settings</title>
 </head>
 <body class="bg-gray-1 font-primaryMedium">
 
@@ -46,7 +46,7 @@
                     <a href="#" class="text-[14px] font-primaryRegular font-[400] capitalize">Activity History</a>
                 </div>
                 <div class="flex items-center mb-[20px]">
-                    <img class="mr-[8px]" src="assets/images/settings.svg" alt="">
+                    <img class="mr-[8px]" src="assets/images/settings-blue.svg" alt="">
                     <a href="#" class="text-blue text-[14px] font-primaryRegular font-[400] capitalize">Settings</a>
                 </div>
                 <div class="flex items-center mb-[20px]">
@@ -75,7 +75,66 @@
                         </nav>
                     </div>
                 </div>
-                <div class="">
+                <div class="flex justify-center items-center min-h-[700px]">
+                    <div class=" min-w-[416px]">
+                        <h1 class="text-default text-[28px]   font-[600] capitalize mb-[34px]  text-center  mb-[38px]">
+                            Change Your Password
+                        </h1>
+                
+                        <div class="mb-[16px] font-[400] text-[16px] font-primaryRegular">
+                            <label for="password" class="text-[#212529] mb-[5px] capitalize">old password</label>
+                            <div class="relative mb-[8px]">
+                                <input id="old-password"
+                                       class="w-full px-[15px] pl-[13px] pr-[27px] rounded-[10px] border border-solid border-[#D3D8DD]  hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                                       type="password" placeholder="••••••••">
+                                <button class="top-1/2 right-[3px] p-[7px] absolute translate-y-[-50%] cursor-pointer"
+                                        id="old-password-img">
+                
+                                    <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
+                                         class=" w-[14px] h-[10px] "
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mb-[16px] font-[400] text-[16px] font-primaryRegular">
+                            <label for="password" class="text-[#212529] mb-[5px] capitalize">new password</label>
+                            <div class="relative mb-[8px]">
+                                <input id="new-password"
+                                       class="w-full px-[15px] pl-[13px] pr-[27px] rounded-[10px] border border-solid border-[#D3D8DD]  hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                                       type="password" placeholder="••••••••">
+                                <button class="top-1/2 right-[3px] p-[7px] absolute translate-y-[-50%] cursor-pointer"
+                                        id="new-password-img">
+                
+                                    <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
+                                         class=" w-[14px] h-[10px] "
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                
+                
+                
+                        <div class="mb-[16px] font-[400] text-[16px] font-primaryRegular">
+                            <label for="repeat-password" class="text-[#212529] mb-[5px] capitalize">Repeat Password</label>
+                            <div class="relative">
+                                <input id="repeat-password"
+                                       class="w-full px-[15px] pl-[13px] pr-[27px] rounded-[10px] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                                       type="password">
+                                <button class="top-1/2 right-[3px] p-[7px] absolute translate-y-[-50%] cursor-pointer"
+                                        id="repeat-password-img">
+                
+                                    <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
+                                         class=" w-[14px] h-[10px] "
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                
+                        <button class=" flex justify-center items-center  font-[500] text-[16px] py-[15px] mb-[16px] w-[100%]  border-none rounded-[10px] bg-[#007BFF] text-[#F8F9FA]"
+                        >
+                            Continue
+                        </button>
+                    </div>
 
                 </div>
                   
@@ -113,6 +172,25 @@
         </div>
     </footer>
     <!-- JS custom -->
+   
+    <script>
+        document.getElementById('old-password-img').addEventListener('mousedown', () => {
+            changePasswordType('old-password');
+        })
+
+        document.getElementById('new-password-img').addEventListener('mousedown', () => {
+            changePasswordType('new-password');
+        })
+    
+        document.getElementById('repeat-password-img').addEventListener('mousedown', () => {
+            changePasswordType('repeat-password');
+        })
+        function changePasswordType(id) {
+            const el = document.getElementById(id);
+            el.type = el.type === 'password' ? 'text' : 'password';
+        }
+    
+    </script>
     <script src="assets/js/text.js"></script>
 </body>
 </html>

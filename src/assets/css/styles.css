@@ -1470,6 +1470,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-height: 100vh;
 }
 
+.min-h-\[700px\] {
+  min-height: 700px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1610,6 +1614,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: 228px;
 }
 
+.min-w-\[416px\] {
+  min-width: 416px;
+}
+
 .max-w-\[200px\] {
   max-width: 200px;
 }
@@ -1644,6 +1652,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .max-w-\[191px\] {
   max-width: 191px;
+}
+
+.max-w-\[416px\] {
+  max-width: 416px;
 }
 
 .flex-initial {
