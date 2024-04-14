@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!-- custom -->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <title>Settings</title>
+</head>
+<body class="bg-gray-1 font-primaryMedium">
+
+    <!-- header -->
+    <header>
+        <div class="py-2.5 bg-black-light">
+            <div class="container px-[8px] mx-auto">
+                <a href="#" class="lang ml-auto block w-5 h-5 hover:opacity-50">
+                    <img src="assets/images/flag-en.svg" width="20" height="20" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="py-3 bg-black">
+            <div class="container px-[8px] mx-auto">
+                <div class="flex items-center">
+                    <a href="#" class="inline-block">
+                        <img src="assets/images/logo.png" width="115" height="44" alt="">
+                    </a>
+                    <a href="#" class="auth-link inline-block ml-auto capitalize text-gray-1 text-[16px] hover:opacity-50">sign in</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- content -->
+    <main class="content overflow-hidden">
+  
+        <div class="lg:container mx-auto flex lg:py-[32px] ">
+            <div class="min-w-[228px]  lg:flex lg:flex-col hidden bg-white rounded-[10px] text-[#212529] shadow-[0_0_20px_0_rgba(203,203,203,0.25)] pt-[25px] pl-[24px] mr-[24px]">
+                <h1 class="font-primarySemiBold fon-[500] text-[16px]  capitalize mb-[90px]">Name Surname</h1>
+                <div class="flex items-center mb-[20px]">
+                    <img class="mr-[8px]" src="assets/images/account-img-black.svg" alt="">
+                    <a href="#" class="text-[14px] font-primaryRegular font-[400] capitalize">My Profile</a>
+                </div>
+                <div class="flex items-center mb-[20px]">
+                    <img class="mr-[8px]" src="assets/images/history.svg" alt="">
+                    <a href="#" class="text-[14px] font-primaryRegular font-[400] capitalize">Activity History</a>
+                </div>
+                <div class="flex items-center mb-[20px]">
+                    <img class="mr-[8px]" src="assets/images/settings-blue.svg" alt="">
+                    <a href="#" class="text-blue text-[14px] font-primaryRegular font-[400] capitalize">Settings</a>
+                </div>
+                <div class="flex items-center mb-[20px]">
+                    <img class="mr-[8px]" src="assets/images/unsubscribe.svg" alt="">
+                    <a href="#" class="text-[14px] font-primaryRegular font-[400] capitalize">Unsubscribe</a>
+                </div>
+                <div class="flex items-center">
+                    <img class="mr-[8px]" src="assets/images/logout.svg" alt="">
+                    <a href="#" class="text-[14px] font-primaryRegular font-[400] capitalize">Log Out</a>
+                </div>
+            </div>
+            <div class="w-full bg-white rounded-[10px] shadow-[0_0_20px_0_rgba(203,203,203,0.25)] pb-[30px]">
+                <div class="bg-white p-[12px_8px] flex items-center border-b-[1px] border-b-[#D3D8DD] lg:shadow-none shadow-2 mt-[10px]">
+                    <h1 class="font-primarySemiBold font-[500] text-[20px] text-[#212529] uppercase  pb-[12px] pl-[32px]">Settings</h1>
+
+                    <div class="relative ms-auto lg:hidden">
+                        <button type="button" class="menu-toggle">
+                            <img src="assets/images/menu.svg" alt="">
+                        </button>
+                        <nav class="menu bg-gray-2 rounded-[4px] absolute shadow-[0_1px_2px_0_rgba(0,0,0,0.30)] right-0 hidden">
+                            <a href="#" class="block font-primaryRegular p-[12px_17px] uppercase whitespace-nowrap">>My Profile</a>
+                            <a href="#" class="block font-primaryRegular p-[12px_17px] uppercase whitespace-nowrap">Activity History</a>
+                            <a href="#" class="block font-primaryRegular p-[12px_17px] uppercase whitespace-nowrap">Settings</a>
+                            <a href="#" class="block font-primaryRegular p-[12px_17px] uppercase whitespace-nowrap">Unsubscribe</a>
+                            <a href="#" class="block font-primaryRegular p-[12px_17px] uppercase whitespace-nowrap">Log Out</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center min-h-[700px]">
+                    <div class=" min-w-[416px]">
+                        <h1 class="text-default text-[28px]   font-[600] capitalize mb-[34px]  text-center  mb-[38px]">
+                            Change Your Password
+                        </h1>
+                
+                        <div class="mb-[16px] font-[400] text-[16px] font-primaryRegular">
+                            <label for="password" class="text-[#212529] mb-[5px] capitalize">old password</label>
+                            <div class="relative mb-[8px]">
+                                <input id="old-password"
+                                       class="w-full px-[15px] pl-[13px] pr-[27px] rounded-[10px] border border-solid border-[#D3D8DD]  hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                                       type="password" placeholder="••••••••">
+                                <button class="top-1/2 right-[3px] p-[7px] absolute translate-y-[-50%] cursor-pointer"
+                                        id="old-password-img">
+                
+                                    <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
+                                         class=" w-[14px] h-[10px] "
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mb-[16px] font-[400] text-[16px] font-primaryRegular">
+                            <label for="password" class="text-[#212529] mb-[5px] capitalize">new password</label>
+                            <div class="relative mb-[8px]">
+                                <input id="new-password"
+                                       class="w-full px-[15px] pl-[13px] pr-[27px] rounded-[10px] border border-solid border-[#D3D8DD]  hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                                       type="password" placeholder="••••••••">
+                                <button class="top-1/2 right-[3px] p-[7px] absolute translate-y-[-50%] cursor-pointer"
+                                        id="new-password-img">
+                
+                                    <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
+                                         class=" w-[14px] h-[10px] "
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                
+                
+                
+                        <div class="mb-[16px] font-[400] text-[16px] font-primaryRegular">
+                            <label for="repeat-password" class="text-[#212529] mb-[5px] capitalize">Repeat Password</label>
+                            <div class="relative">
+                                <input id="repeat-password"
+                                       class="w-full px-[15px] pl-[13px] pr-[27px] rounded-[10px] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_2px_0_rgba(0,123,255,1)] h-[48px]"
+                                       type="password">
+                                <button class="top-1/2 right-[3px] p-[7px] absolute translate-y-[-50%] cursor-pointer"
+                                        id="repeat-password-img">
+                
+                                    <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
+                                         class=" w-[14px] h-[10px] "
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                
+                        <button class=" flex justify-center items-center  font-[500] text-[16px] py-[15px] mb-[16px] w-[100%]  border-none rounded-[10px] bg-[#007BFF] text-[#F8F9FA]"
+                        >
+                            Continue
+                        </button>
+                    </div>
+
+                </div>
+                  
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-black">
+        <div class="pt-[20px] md:pt-[55px] pb-[25px]">
+            <div class="container mx-auto px-[8px]">
+                <div class="md:flex md:items-center">
+                    <img src="assets/images/logo.png" width="115" height="44" alt="" class="mb-[25px] md:mb-[0]">
+                    <nav class="ml-[-15px] md:ml-auto font-primaryRegular text-gray-3">
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Contact</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Privecy Policy</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Terms</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[15px]">Cookies</a>
+                    </nav>
+                </div>
+                <div class="flex items-center mt-[25px] pt-[25px] pb-[15px] md:pb-[42px] border-t-[1px] border-gray-4">
+                    <div class="text-gray font-primaryRegular">©2024 Itix LTD<span class="hidden md:inline-block">, all rights reserved</span></div>
+                    <nav class="ml-auto flex">
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[14px] hover:opacity-50">
+                            <img src="assets/images/youtube.svg" alt="">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS custom -->
+   
+    <script>
+        document.getElementById('old-password-img').addEventListener('mousedown', () => {
+            changePasswordType('old-password');
+        })
+
+        document.getElementById('new-password-img').addEventListener('mousedown', () => {
+            changePasswordType('new-password');
+        })
+    
+        document.getElementById('repeat-password-img').addEventListener('mousedown', () => {
+            changePasswordType('repeat-password');
+        })
+        function changePasswordType(id) {
+            const el = document.getElementById(id);
+            el.type = el.type === 'password' ? 'text' : 'password';
+        }
+    
+    </script>
+    <script src="assets/js/text.js"></script>
+</body>
+</html>
