@@ -8,9 +8,9 @@ const scrollSliderMainListItem = document.querySelectorAll('.scroll-slider__main
 
 scrollSliderMainListItem.forEach(element => {
     element.addEventListener('mouseover', function() {
-        scrollSliderMainListItem.forEach(element => element.classList.remove('shadow-[0_2px_4px_0_rgba(0,0,0,0.08)]', 'opacity-70'));
+        scrollSliderMainListItem.forEach(element => element.classList.remove('shadow-[0_0.2rem_0.4rem_0_rgba(0,0,0,0.08)]', 'opacity-70'));
 
-        element.classList.add('shadow-[0_2px_4px_0_rgba(0,0,0,0.08)]', 'opacity-70');
+        element.classList.add('shadow-[0_0.2rem_0.4rem_0_rgba(0,0,0,0.08)]', 'opacity-70');
 
         scrolllSliderMainWrapper.href = element.dataset.href;
         scrolllSliderMainImg.src = element.src;
