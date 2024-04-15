@@ -36,7 +36,7 @@
         <div class="container mx-auto px-[8rem]">
             <div class="lg:flex lg:justify-center items-start pt-[4.4rem] pb-[3.2rem] pl-[7.3rem] relative">
                 <div class="lg:w-[40%] flex flex-col pr-[11.0rem] relative">
-                    <img class="mt-[2.5rem] absolute" src="assets/images/vector.svg" width="270" height="56.5rem" alt="">
+                    <img class="mt-[2.5rem] ml-[-8.5rem] absolute" src="assets/images/vector.svg" width="270" height="56.5rem" alt="">
                     <div class="mb-[4.0rem] relative">
                         <p class="text-default text-[2.0rem] font-[500] capitalize mb-[1.6rem]">Contact us</p>
                         <h1 class="text-default text-[3.2rem] font-primarySemiBold font-[600] capitalize mb-[1.6rem]">Get in touch today</h1>
@@ -58,48 +58,82 @@
                 </div>
                 <div class="lg:w-[60%] bg-white rounded-[1.0rem] shadow relative">
                     <div class="pt-[2.4rem] pb-[3.0rem] pl-[2.7rem]">
-                        <button class="text-[#495057] text-[1.6rem] font-[500] px-[1.6rem] py-[0.8rem] border-[0.1rem] rounded-t-[0.5rem] border-[#DEE2E6] border-b-[0]">Organisation</button>
-                        <button class="text-blue text-[1.6rem] font-primaryRegular font-[400] px-[1.6rem] py-[0.8rem] border-[#DEE2E6] border-b-[0.1rem] ml-[-0.4rem]">Person</button>
+                        <button class="contact-form-tab-button-organisation contact-form-tab-button-organisation--active text-[1.6rem] font-[500] px-[1.6rem] py-[0.8rem] rounded-t-[0.5rem] capitalize  border-[#DEE2E6] text-[#495057] border-[0.1rem] border-b-[0]">Organisation</button>
+                        <button class="contact-form-tab-button-person text-[1.6rem] font-primaryRegular font-[400] px-[1.6rem] py-[0.8rem]  ml-[-0.4rem] rounded-t-[0.5rem] capitalize border-[#DEE2E6] text-blue border-b-[0.1rem]">Person</button>
                     </div>
-                    <div class="pb-[3.7rem] px-[2.7rem]">
-                        <div class="columns-2">
-                            <div class="mb-[2.5rem]">
-                                <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Name</label>
-                                <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="John Cage">
+                    <div class="contact-form-tab-organisation">
+                        <div class="pb-[3.7rem] px-[2.7rem]">
+                            <div class="columns-2">
+                                <div class="mb-[2.5rem]">
+                                    <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Name</label>
+                                    <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="John Cage">
+                                </div>
+                                <div class="mb-[2.5rem]">
+                                    <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Identification Code</label>
+                                    <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="20938">
+                                </div>
                             </div>
-                            <div class="mb-[2.5rem]">
-                                <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Identification Code</label>
-                                <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="20938">
+                            <div class="columns-2">
+                                <div class="mb-[2.5rem]">
+                                    <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Phone</label>
+                                    <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="+995 97 38 38 38">
+                                </div>
+                                <div class="">
+                                    <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Company</label>
+                                    <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="Facebook">
+                                </div>
                             </div>
-                        </div>
-                        <div class="columns-2">
-                            <div class="mb-[2.5rem]">
-                                <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Phone</label>
-                                <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="+995 97 38 38 38">
+                            <div class="columns-1">
+                                <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Email</label>
+                                <input class="w-full p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="reece08@gmail.com">
                             </div>
-                            <div class="">
-                                <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Company</label>
-                                <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="Facebook">
+                            <div class="mt-[2.5rem] columns-1">
+                                <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Message</label>
+                                <textarea class="w-full p-[1.1rem] min-h-[19.5rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)]"
+                                placeholder="Pease type your message here..."></textarea>
                             </div>
-                        </div>
-                        <div class="columns-1">
-                            <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Email</label>
-                            <input class="w-full p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="reece08@gmail.com">
-                        </div>
-                        <div class="mt-[2.5rem] columns-1">
-                            <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Message</label>
-                            <textarea class="w-full p-[1.1rem] min-h-[19.5rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)]"
-                            placeholder="Pease type your message here..."></textarea>
-                        </div>
 
-                        <!-- google authentication with captcha -->
-                        <div class="h-[7.4rem] mt-[3.0rem] py-[0.8rem] px-[1.2rem] rounded-[0.2rem] border border-solid border-[#D6D6D6] shadow bg-[#FAFAFA] flex items-center">
-                            <img src="assets/images/captcha.svg" alt="">
-                        </div>
+                            <!-- google authentication with captcha -->
+                            <div class="h-[7.4rem] mt-[3.0rem] py-[0.8rem] px-[1.2rem] rounded-[0.2rem] border border-solid border-[#D6D6D6] shadow bg-[#FAFAFA] flex items-center">
+                                <img src="assets/images/captcha.svg" alt="">
+                            </div>
 
-                        <button class="mt-[3.0rem] text-white text-[1.6rem] font-[500] px-[16.6rem] py-[1.4rem] bg-blue rounded-[10rem] items-center w-[100%] hover:opacity-[0.8]">
-                            Send
-                        </button>
+                            <button class="mt-[3.0rem] text-white text-[1.6rem] font-[500] px-[16.6rem] py-[1.4rem] bg-blue rounded-[10rem] items-center w-[100%] hover:opacity-[0.8]">
+                                Send
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contact-form-tab-person hidden">
+                        <div class="pb-[3.7rem] px-[2.7rem]">
+                            <div class="columns-2">
+                                <div class="mb-[2.5rem]">
+                                    <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Name</label>
+                                    <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="John Cage">
+                                </div>
+                                <div class="mb-[2.5rem]">
+                                    <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Phone</label>
+                                    <input class="w-[100%] p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="+995 97 38 38 38">
+                                </div>
+                            </div>
+                            <div class="columns-1">
+                                <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Email</label>
+                                <input class="w-full p-[1.1rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]" type="text" placeholder="reece08@gmail.com">
+                            </div>
+                            <div class="mt-[2.5rem] columns-1">
+                                <label class="text-default text-[1.6rem] font-primaryRegular font-[400] mb-[0.6rem]">Message</label>
+                                <textarea class="w-full p-[1.1rem] min-h-[19.5rem] rounded-[0.8rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)]"
+                                placeholder="Pease type your message here..."></textarea>
+                            </div>
+
+                            <!-- google authentication with captcha -->
+                            <div class="h-[7.4rem] mt-[3.0rem] py-[0.8rem] px-[1.2rem] rounded-[0.2rem] border border-solid border-[#D6D6D6] shadow bg-[#FAFAFA] flex items-center">
+                                <img src="assets/images/captcha.svg" alt="">
+                            </div>
+
+                            <button class="mt-[3.0rem] text-white text-[1.6rem] font-[500] px-[16.6rem] py-[1.4rem] bg-blue rounded-[10rem] items-center w-[100%] hover:opacity-[0.8]">
+                                Send
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,5 +169,54 @@
             </div>
         </div>
     </footer>
+    <!-- JS custom -->
+    <script>
+        const contactTabOrganisationButton = document.querySelector('.contact-form-tab-button-organisation');
+        const contactTabPersonButton = document.querySelector('.contact-form-tab-button-person');
+        const contactTabOrganisation = document.querySelector('.contact-form-tab-organisation');
+        const contactTabPerson = document.querySelector('.contact-form-tab-person');
+
+        contactTabOrganisationButton.onclick = function() {
+            if (contactTabOrganisationButton.className.indexOf('contact-form-tab-button-organisation--active') === -1) {
+                changeContactTab('organisation');
+
+                contactTabOrganisationButton.classList.add('contact-form-tab-button-organisation--active');
+                contactTabOrganisationButton.classList.add('text-[#495057]', 'border-[0.1rem]', 'border-b-[0]');
+                contactTabOrganisationButton.classList.remove('text-blue', 'font-primaryRegular');
+                contactTabPersonButton.classList.remove('contact-form-tab-button-person--active');
+                contactTabPersonButton.classList.remove('text-[#495057]', 'border-[0.1rem]', 'border-b-[0]');
+                contactTabPersonButton.classList.add('text-blue', 'border-b-[0.1rem]', 'font-primaryRegular');
+            }
+        }
+
+        contactTabPersonButton.onclick = function() {
+            if (contactTabOrganisationButton.className.indexOf('contact-form-tab-button-person--active') === -1) {
+                changeContactTab('person');
+
+                contactTabPersonButton.classList.add('contact-form-tab-button-person--active');
+                contactTabPersonButton.classList.add('text-[#495057]', 'border-[0.1rem]', 'border-b-[0]');
+                contactTabPersonButton.classList.remove('text-blue', 'font-primaryRegular');
+                contactTabOrganisationButton.classList.remove('contact-form-tab-button-organisation--active');
+                contactTabOrganisationButton.classList.remove('text-[#495057]', 'border-[0.1rem]', 'border-b-[0]');
+                contactTabOrganisationButton.classList.add('text-blue', 'border-b-[0.1rem]', 'font-primaryRegular');
+            }
+        }
+
+        function changeContactTab(tabName) {
+
+            if (tabName == 'organisation') {
+
+               contactTabOrganisation.classList.remove('hidden');
+                contactTabPerson.classList.add('hidden');
+
+            } else if (tabName == 'person') {
+                
+                contactTabPerson.classList.remove('hidden');
+                contactTabOrganisation.classList.add('hidden');
+
+            }
+
+        }
+    </script>
 </body>
 </html>
