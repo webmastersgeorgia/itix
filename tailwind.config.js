@@ -24,7 +24,10 @@ module.exports = {
       'white': '#ffffff',
       'white-1': 'rgba(255, 255, 255, 0.5)',
       'red': '#DC3545',
-      'red-1': '#D80027'
+      'red-1': '#D80027',
+      'gold': '#E1BD52',
+      'platimun': '#CEA378',
+      'silver': '#A3BACE'
     },
     fontFamily: {
       primaryRegular: ['FiraGO-Regular'],
