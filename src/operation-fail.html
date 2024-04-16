@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <title>Operation Fail</title>
+</head>
+<body class="bg-[#F5F7FA] font-primaryMedium min-h-screen flex flex-col justify-between">
+<main class="content overflow-hidden mb-[18.8rem] md:mb-[44.7rem] lg:mb-[25.3rem] px-[1.6rem] bg-[url('../../assets/images/bg-1.svg')] bg-no-repeat bg-center">
+    <div class="mx-auto max-w-[38.2rem]">
+
+        <div class="flex flex-col items-center">
+            <div class="mt-[11.8rem] lg:mt-[36.1rem] xl:mt-[18.5rem]">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#DC3545"/>
+                    <path d="M15.9082 26.0171L21.7212 31.8182L34.09 18.1819" stroke="white" stroke-width="4"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h1 class="text-default text-[2.8rem] font-[600] capitalize  mt-[3.2rem] text-center  mb-[1.8rem]">
+                Something went wrong
+            </h1>
+        </div>
+        <p class="font-[400] font-primaryRegular text-[1.6rem] text-[#5D6369] text-center mb-[2.8rem]">operation was not
+            completed go back to the main manu</p>
+        <button class="flex justify-center items-center font-[500] text-[1.6rem] py-[1.5rem]  w-[100%] border-none rounded-[1.0rem] bg-[#007BFF] text-[#F8F9FA] "
+        >
+            Go Back
+        </button>
+    </div>
+
+</main>
+
+<!-- footer -->
+<footer class="footer bg-black">
+    <div class="pt-[2.0rem] md:pt-[5.5rem] pb-[2.5rem]">
+        <div class="container mx-auto px-[0.8rem]">
+            <div class="md:flex md:items-center">
+                <img src="assets/images/logo.png" width="115" height="44" alt="" class="mb-[2.5rem] md:mb-[0]">
+                <nav class="ml-[-1.5rem] md:ml-auto font-primaryRegular text-gray-3">
+                    <a href="#" class="capitalize hover:opacity-50 ml-[1.5rem]">Contact</a>
+                    <a href="#" class="capitalize hover:opacity-50 ml-[1.5rem]">Privecy Policy</a>
+                    <a href="#" class="capitalize hover:opacity-50 ml-[1.5rem]">Terms</a>
+                    <a href="#" class="capitalize hover:opacity-50 ml-[1.5rem]">Cookies</a>
+                </nav>
+            </div>
+            <div class="flex items-center mt-[2.5rem] pt-[2.5rem] pb-[1.5rem] md:pb-[4.2rem] border-t-[0.1rem] border-gray-4">
+                <div class="text-gray font-primaryRegular">©2024 Itix LTD<span class="hidden md:inline-block">, all rights reserved</span>
+                </div>
+                <nav class="ml-auto flex">
+                    <a href="#" class="ml-[1.4rem] hover:opacity-50">
+                        <img src="assets/images/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="ml-[1.4rem] hover:opacity-50">
+                        <img src="assets/images/instagram.svg" alt="">
+                    </a>
+                    <a href="#" class="ml-[1.4rem] hover:opacity-50">
+                        <img src="assets/images/youtube.svg" alt="">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('password-img').addEventListener('mousedown', () => {
+        changePasswordType('password');
+    });
+    document.getElementById('repeat-password-img').addEventListener('mousedown', () => {
+        changePasswordType('repeat-password');
+    });
+
+    function changePasswordType(id) {
+        const el = document.getElementById(id);
+        el.type = el.type === 'password' ? 'text' : 'password';
+    }
+</script>
+</body>
+</html>
