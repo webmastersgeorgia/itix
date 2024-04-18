@@ -6,52 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./assets/css/styles.css" rel="stylesheet">
-    <title>Reset Password</title>
+    <title>Reset Link</title>
 </head>
 <body class="bg-[#F5F7FA] font-primaryMedium min-h-screen flex flex-col justify-between">
-
-    <main class="content overflow-hidden mb-[18.8rem] md:mb-[44.7rem] lg:mb-[25.3rem] px-[1.6rem] bg-[url('../../assets/images/bg-1.svg')] bg-no-repeat bg-center">
+    <main class="content overflow-hidden pb-[10.8rem] lg:pb-[25.3rem] px-[1.6rem] bg-[url('../../assets/images/bg-1.svg')] bg-no-repeat bg-center">
         <div class="mx-auto max-w-[38.2rem]">
-            <h1 class="text-default text-[2.8rem] font-[600] capitalize  mt-[18.7rem] text-center lg:mt-[40.9rem] xl:mt-[15.2rem] mb-[3.8rem]">
-                Reset Your Password
-            </h1>
 
-            <div class="mb-[1.6rem] font-[400] text-[1.6rem] font-primaryRegular">
-                <label for="password" class="text-[#212529] mb-[0.5rem]">password</label>
-                <div class="relative mb-[0.8rem]">
-                    <input id="password"
-                        class="w-full px-[1.5rem] pl-[1.3rem] pr-[2.7rem] rounded-[1.0rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]"
-                        type="password" placeholder="••••••••">
-                    <button class="top-1/2 right-[0.3rem] p-[0.7rem] absolute translate-y-[-50%] cursor-pointer"
-                            id="password-img">
-
-                        <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
-                            class=" w-[1.4rem] h-[1.0rem] "
-                        >
-                    </button>
+            <div class="flex flex-col items-center">
+                <div>
+                    <svg class="mt-[12.3rem] lg:mt-[22.5rem] xl:mt-[23.8rem]" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#28A745"/>
+                        <path d="M15.9082 26.017L21.7212 31.8181L34.09 18.1818" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
+                <h1 class="text-default text-[2.8rem] font-[600] capitalize  mt-[3.2rem] text-center  mb-[1.8rem]">
+                    Reset link sent
+                </h1>
             </div>
-
-            <div class="mb-[1.6rem] font-[400] text-[1.6rem] font-primaryRegular">
-                <label for="repeat-password" class="text-[#212529] mb-[0.5rem]">Repeat Password</label>
-                <div class="relative">
-                    <input id="repeat-password"
-                        class="w-full px-[1.5rem] pl-[1.3rem] pr-[2.7rem] rounded-[1.0rem] border border-solid border-[#D3D8DD] hover:border-[#007BFF] outline-none focus-visible:border-[#007BFF] focus-visible:shadow-[0_0_0.2rem_0_rgba(0,123,255,1)] h-[4.8rem]"
-                        type="password">
-                    <button class="top-1/2 right-[0.3rem] p-[0.7rem] absolute translate-y-[-50%] cursor-pointer"
-                            id="repeat-password-img">
-
-                        <img src="./assets/images/eye.svg" alt="eye" width="14" height="10"
-                            class=" w-[1.4rem] h-[1.0rem] "
-                        >
-                    </button>
-                </div>
+             <p class="font-[400] font-primaryRegular text-[1.6rem] text-[#5D6369] text-center mb-[2.8rem]">Check your email for the reset password link</p>
+            <div class="relative after:content-[''] after:w-[100%] after:h-[0.2rem] after:bottom-0 after:left-0 after:bg-[#D3D8DD] after:absolute pb-[3.5rem]">
+                <button class="flex justify-center items-center font-[500] text-[1.6rem] py-[1.5rem]  w-[100%] border-none rounded-[1.0rem] bg-[#007BFF] text-[#F8F9FA] "
+                >
+                    Continue
+                </button>
             </div>
-
-            <button class="flex justify-center items-center font-[500] text-[1.6rem] py-[1.5rem] mb-[1.6rem] w-[100%] border-none rounded-[1.0rem] bg-[#007BFF] text-[#F8F9FA]"
-            >
-                Continue
-            </button>
+            <p class="font-[400] font-primaryRegular text-[1.6rem] text-[#5D6369] text-center mb-[2.8rem] mt-[4rem]">If you don’t see your reset password email link, please check your spam folder inside your mail</p>
         </div>
 
     </main>

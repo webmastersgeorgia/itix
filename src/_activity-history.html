@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!-- custom -->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <title>Activity History</title>
+</head>
+<body class="bg-gray-1 font-primaryMedium">
+
+    <!-- header -->
+    <header class="header">
+        <div class="py-[1rem] bg-black-light">
+            <div class="container px-[0.8rem] mx-auto">
+                <a href="#" class="lang ml-auto block w-[2.0rem] h-[2.0rem] hover:opacity-50">
+                    <img src="assets/images/flag-en.svg" width="20" height="20" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="py-[1.2rem] bg-black">
+            <div class="container px-[0.8rem] mx-auto">
+                <div class="flex items-center">
+                    <a href="#" class="inline-block">
+                        <img src="assets/images/logo.png" width="115" height="44" alt="">
+                    </a>
+                    <a href="#" class="auth-link inline-block ml-auto capitalize text-gray-1 text-[1.6rem] hover:opacity-50">sign in</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- content -->
+    <main class="content overflow-hidden">
+        <div class="lg:container mx-auto flex lg:py-[3.2rem]">
+            <div class="lg:w-[22.8rem] lg:flex lg:flex-col hidden bg-white rounded-[1.0rem] shadow-[0_0_2.0rem_0_rgba(203,203,203,0.25)] pt-[2.5rem] pl-[2.4rem] mr-[2.4rem]">
+                <h1 class="font-primarySemiBold fon-[500] text-[1.6rem] text-[#212529] capitalize mb-[9.0rem]">Name Surname</h1>
+                <div class="flex items-center mb-[2.0rem]">
+                    <img class="mr-[0.8rem]" src="assets/images/account-img-black.svg" alt="">
+                    <a href="#" class="text-[#212529] text-[1.4rem] font-primaryRegular font-[400] capitalize">My Profile</a>
+                </div>
+                <div class="flex items-center mb-[2.0rem]">
+                    <img class="mr-[0.8rem]" src="assets/images/history-blue.svg" alt="">
+                    <a href="#" class="text-blue text-[1.4rem] font-primaryRegular font-[400] capitalize">Activity History</a>
+                </div>
+                <div class="flex items-center mb-[2.0rem]">
+                    <img class="mr-[0.8rem]" src="assets/images/settings.svg" alt="">
+                    <a href="#" class="text-[#212529] text-[1.4rem] font-primaryRegular font-[400] capitalize">Settings</a>
+                </div>
+                <div class="flex items-center mb-[2.0rem]">
+                    <img class="mr-[0.8rem]" src="assets/images/unsubscribe.svg" alt="">
+                    <a href="#" class="text-[#212529] text-[1.4rem] font-primaryRegular font-[400] capitalize">Unsubscribe</a>
+                </div>
+                <div class="flex items-center">
+                    <img class="mr-[0.8rem]" src="assets/images/logout.svg" alt="">
+                    <a href="#" class="text-[#212529] text-[1.4rem] font-primaryRegular font-[400] capitalize">Log Out</a>
+                </div>
+            </div>
+            <div class="lg:w-[calc(100%-25.2rem)] bg-white rounded-[1.0rem] shadow-[0_0_2.0rem_0_rgba(203,203,203,0.25)] pb-[3.0rem]">
+                <div class="bg-white p-[1.2rem_0.8rem] flex items-center border-b-[0.1rem] border-b-[#D3D8DD] lg:shadow-none shadow-2 lg:mt-[1.0rem]">
+                    <h1 class="font-primarySemiBold font-[500] text-[2.0rem] text-[#212529] uppercase lg:pb-[1.2rem] lg:pl-[3.2rem]">Activity History</h1>
+                    <div class="relative ms-auto lg:hidden">
+                        <button type="button" class="menu-toggle">
+                            <img src="assets/images/menu.svg" alt="">
+                        </button>
+                        <nav class="menu bg-gray-2 rounded-[0.4rem] absolute shadow-[0_0.1rem_0.2rem_0_rgba(0,0,0,0.30)] right-0 hidden">
+                            <a href="#" class="block font-primaryRegular p-[1.2rem_1.7rem] uppercase whitespace-nowrap">My Profile</a>
+                            <a href="#" class="block font-primaryRegular p-[1.2rem_1.7rem] uppercase whitespace-nowrap">Activity History</a>
+                            <a href="#" class="block font-primaryRegular p-[1.2rem_1.7rem] uppercase whitespace-nowrap">Settings</a>
+                            <a href="#" class="block font-primaryRegular p-[1.2rem_1.7rem] uppercase whitespace-nowrap">Unsubscribe</a>
+                            <a href="#" class="block font-primaryRegular p-[1.2rem_1.7rem] uppercase whitespace-nowrap">Log Out</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:mt-[1.5rem] px-0 lg:px-[4.5rem]">
+                    <div class="sm:-mx-[2.4rem] lg:-mx-[3.2rem]">
+                      <div class="inline-block w-full py-[0.8rem] sm:px-[2.4rem] lg:px-[3.2rem]">
+                        <div class="overflow-hidden">
+                          <table
+                            class="w-full text-left font-primaryRegular font-[400] text-[1.4rem] lg:text-[1.6rem] table-fixed xl:table-auto">
+                            <thead
+                              class="border-b-[0.1rem] border-b-[#D3D8DD] text-center">
+                              <tr>
+                                <th scope="col" class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1rem] lg:py-[1.6rem]  text-[#5D6369] font-primaryRegular font-[400] capitalize text-start">Order Name</th>
+                                <th scope="col" class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1rem] lg:py-[1.6rem]  text-[#5D6369] font-primaryRegular font-[400] capitalize">Date</th>
+                                <th scope="col" class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1rem] lg:py-[1.6rem]  text-[#5D6369] font-primaryRegular font-[400] capitalize">Amount</th>
+                                <th scope="col" class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1rem] lg:py-[1.6rem]  text-[#5D6369] font-primaryRegular font-[400] capitalize">Quantity</th>
+                                <th scope="col" class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1rem] lg:py-[1.6rem]  text-[#5D6369] font-primaryRegular font-[400] capitalize">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr
+                                    class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default text-start">Black sea arena concert</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default">Mar 1, 2023</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default">100 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default text-center">1</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-[#28A745]">Success</td>
+                                </tr>
+                                <tr
+                                    class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default text-start">Black sea arena concert</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default">Mar 1, 2023</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default">100 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default text-center">1</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-[#28A745]">Success</td>
+                                </tr>
+                                <tr
+                                    class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default text-start">Black sea arena concert</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default">Mar 1, 2023</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default">100 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-default text-center">1</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem]  text-[#28A745]">Success</td>
+                                </tr>
+                                <tr
+                                class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-start">Beyonce in Tbilisi</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">Feb 12, 2033</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">500 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-center">5</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-red">Rejected</td>
+                                </tr>
+                                <tr
+                                    class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-start">Beyonce in Tbilisi</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">Feb 12, 2033</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">500 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-center">5</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-red">Rejected</td>
+                                </tr>
+                                <tr
+                                class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-start">Beyonce in Tbilisi</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">Feb 12, 2033</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">500 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-center">5</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-red">Rejected</td>
+                                </tr>
+                                <tr
+                                class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-start">Beyonce in Tbilisi</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">Feb 12, 2033</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">500 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-center">5</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-[#28A745]">Success</td>
+                                </tr>
+                                <tr
+                                class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-start">Beyonce in Tbilisi</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">Feb 12, 2033</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">500 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-center">5</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-[#28A745]">Success</td>
+                                </tr>
+                                <tr
+                                class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-start">Beyonce in Tbilisi</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">Feb 12, 2033</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">500 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-center">5</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-[#28A745]">Success</td>
+                                </tr>
+                                <tr
+                                class="hover:bg-[#F8F9FA]">
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-start">Beyonce in Tbilisi</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">Feb 12, 2033</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default">500 GEL</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-default text-center">5</td>
+                                    <td class="whitespace-nowrap text-ellipsis overflow-hidden px-[0.8rem] lg:px-[2.4rem] py-[1.6rem] text-[#28A745]">Success</td>
+                                </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="flex justify-end mt-[2rem] lg:mt-[4.0rem] mr-[0.8rem] lg:mr-[0]">
+                            <select class="max-w-[4.0rem] h-[2.5rem] bg-[#D3D8DD] rounded-[0.4rem] px-[0.5rem] py-[0.3rem] text-[#5D6369]">
+                                <option value="1" class="font-primaryRegular font-[400]">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <span class="font-primaryRegular font-[400] text-[1.6rem] text-[#5D6369] ml-[1.0rem]">of 1 pages</span>
+                            <div class="flex ml-[2.0rem]">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7905 5.94451C15.0421 6.16016 15.0712 6.53894 14.8556 6.79053L10.3902 12.0001L14.8556 17.2096C15.0712 17.4612 15.0421 17.84 14.7905 18.0556C14.5389 18.2713 14.1601 18.2421 13.9444 17.9905L9.14445 12.3905C8.95185 12.1658 8.95185 11.8343 9.14445 11.6096L13.9444 6.00958C14.1601 5.75799 14.5389 5.72885 14.7905 5.94451Z" fill="#5D6369"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.20954 5.94451C9.46113 5.72885 9.83991 5.75799 10.0556 6.00958L14.8556 11.6096C15.0482 11.8343 15.0482 12.1658 14.8556 12.3905L10.0556 17.9905C9.83991 18.2421 9.46113 18.2713 9.20954 18.0556C8.95794 17.84 8.9288 17.4612 9.14446 17.2096L13.6098 12.0001L9.14446 6.79053C8.9288 6.53894 8.95794 6.16016 9.20954 5.94451Z" fill="#5D6369"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer bg-black">
+        <div class="pt-[2.0rem] md:pt-[5.5rem] pb-[2.5rem]">
+            <div class="container mx-auto px-[0.8rem]">
+                <div class="md:flex md:items-center">
+                    <img src="assets/images/logo.png" width="115" height="44" alt="" class="mb-[2.5rem] md:mb-[0]">
+                    <nav class="ml-[-1.5rem] md:ml-auto font-primaryRegular text-gray-3">
+                        <a href="#" class="capitalize hover:opacity-50 ml-[1.5rem]">Contact</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[1.5rem]">Privecy Policy</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[1.5rem]">Terms</a>
+                        <a href="#" class="capitalize hover:opacity-50 ml-[1.5rem]">Cookies</a>
+                    </nav>
+                </div>
+                <div class="flex items-center mt-[2.5rem] pt-[2.5rem] pb-[1.5rem] md:pb-[4.2rem] border-t-[0.1rem] border-gray-4">
+                    <div class="text-gray font-primaryRegular">©2024 Itix LTD<span class="hidden md:inline-block">, all rights reserved</span></div>
+                    <nav class="ml-auto flex">
+                        <a href="#" class="ml-[1.4rem] hover:opacity-50">
+                            <img src="assets/images/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[1.4rem] hover:opacity-50">
+                            <img src="assets/images/instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="ml-[1.4rem] hover:opacity-50">
+                            <img src="assets/images/youtube.svg" alt="">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS custom -->
+    <script src="assets/js/toggle-menu.js"></script>
+</body>
+</html>
