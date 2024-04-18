@@ -301,7 +301,7 @@
                                         Under EU rules, a seller must repair, replace, or give you a full or partial refund if something you buy turns out to be faulty or doesn’t look or work as advertised. You always have the right to a minimum 2-year guarantee, at no cost.
                                     </div>
                                 </div>
-                                <div class="mt-[2.0rem]">
+                                <div class="mt-[1.5rem] xl:mt-[3.5rem]">
                                     <hr class="border-gray-3" />
                                 </div>
                             </div>
@@ -431,11 +431,19 @@
         const navigationCont = document.getElementById("navigation-content");
         const paymentInfo = document.getElementById("event-payment-info");
         window.addEventListener("scroll", function() {
+            const footerHeight = document.getElementsByTagName('footer')[0].offsetHeight +20;
+          //  console.log(window.scrollY)
             const scrollPosition = window.scrollY
             if(scrollPosition > 500 ){
                 paymentInfo.classList.add("fixed", "top-[6.0rem]")
             }else{
                 paymentInfo.classList.remove("fixed", "top-[6.0rem]")
+            }
+
+            if(scrollPosition > document.body.offsetHeight - footerHeight - window.innerHeight){
+                console.log(document.body.offsetHeight );
+                paymentInfo.classList.remove( "top-[6.0rem]")
+                paymentInfo.classList.add( "bottom-[25rem]")
             }
             if(window.screen.width >= 960)index = 0; else index = 1;
             const navigation = document.getElementsByClassName("event-navigation")[index]; 
